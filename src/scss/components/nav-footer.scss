@@ -1,0 +1,35 @@
+.nav-footer{
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 30px;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bg-section);
+    padding: 25px 28px;
+    border-radius: 5px;
+    max-width: 240px;
+  }
+  &__label{
+    color: var(--clr-text-light);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: none;
+    color: var(--clr-text-muted);
+    transition: opacity .3s ease;
+    margin-top: 10px;
+    &:hover{
+      transition: opacity .3s ease;
+      color: var(--btn-accent-bg);
+    }
+  }
+}

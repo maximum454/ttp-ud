@@ -1,0 +1,36 @@
+.nav{
+  &__inner{
+
+  }
+  &__list{
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: linear-gradient(#002e6d, #004f9e);
+    li{
+      text-decoration: none;
+      a{
+        font-weight: 500;
+        color: #e2e8ef;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 7px 10px;
+        transition: background-color .3s ease;
+        display: block;
+        &:hover,
+        &.active{
+          background-color: #FFFFFF;
+          color: #1c4d9b;
+          transition: background-color .3s ease;
+        }
+      }
+    }
+  }
+}

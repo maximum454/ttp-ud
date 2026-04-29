@@ -1,0 +1,36 @@
+
+:root{
+  --bg: #E7E6E4;
+  --color-head: #555555;
+  --color-text: #777777;
+  --white: #ffffff;
+  --black: #000000;
+  --link-active: #956B41;
+  --footer-bg: #282828;
+  --white-text: #ffffff;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  &.lock{
+    overflow: hidden;
+  }
+}
+.wrp{
+
+}
+.container{
+  max-width: 1440px;
+  min-width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include r(480){
+    padding: 0;
+  }
+}

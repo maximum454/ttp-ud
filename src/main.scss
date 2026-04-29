@@ -1,0 +1,83 @@
+@use "scss/partials/normalize";
+@use "scss/partials/remodal" as remodal-core;
+@use "scss/partials/remodal-default-theme";
+@use "scss/mixin" as *;
+@use "scss/buttons";
+@use "scss/form";
+@use "scss/remodal" as remodal-custom;
+@use "scss/icon";
+@use "scss/text";
+@use "scss/tabs";
+
+//Шапка
+@use "scss/components/header";
+@use "scss/components/social-links";
+@use "scss/components/contact-group";
+@use "scss/components/nav";
+@use "scss/components/footer";
+@use "scss/components/nav-footer";
+
+
+
+:root {
+  /* --- BRAND COLORS (Синяя гамма) --- */
+  --clr-blue-dark: #002e6d;      /* Кнопка, фон, навигация (основной) */
+  --clr-blue-medium: #004f9e;    /* Навигация, фон, шрифт */
+  --clr-blue-accent: #0d4494;    /* Дополнительный синий акцент */
+  --clr-blue-light: #84a9e1;     /* Светло-синий шрифт */
+
+  /* --- ACCENT COLORS (Золото / Кнопки) --- */
+  --clr-gold: #fdb930;           /* Основной фон яркой кнопки */
+  --clr-gold-dark: #e89d06;      /* Темное золото (вероятно, для hover кнопки) */
+
+  /* --- NEUTRALS & BACKGROUNDS (Фоны) --- */
+  --clr-bg-main: #f0f3f7;        /* Основной фон страницы */
+  --clr-bg-soft: #eef2f6;        /* Дополнительный мягкий фон */
+  --clr-bg-section: #141b25;     /* Темный фон секции */
+  --clr-bg-footer: #11151e;      /* Самый темный фон (футер) */
+  --clr-white: #ffffff;          /* Чистый белый (кнопки, шрифт, фон) */
+
+  /* --- TYPOGRAPHY (Шрифты) --- */
+  --clr-text-main: #010101;      /* Почти черный (основной текст) */
+  --clr-text-logo: #1d1d1d;     /* Светлый шрифт для темных фонов */
+  --clr-text-gray-dark: #4e4e4e; /* Темно-серый шрифт */
+  --clr-text-gray: #696969;      /* Серый шрифт */
+  --clr-text-muted: #6b727f;     /* Приглушенный серый шрифт */
+  --clr-text-label: #8f9195;
+  --clr-text-light: #e2e8ef;     /* Светлый шрифт для темных фонов */
+
+  /* --- SEMANTIC ALIASES (Смысловые переменные для удобства) --- */
+  --btn-primary-bg: var(--clr-blue-dark);
+  --btn-accent-bg: var(--clr-gold);
+  --header-nav: var(--clr-blue-dark);
+  --footer-bg: var(--clr-bg-footer);
+
+  --font-main: 'Roboto', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  &.lock{
+    overflow: hidden;
+  }
+}
+.wrp{
+
+}
+.container{
+  max-width: 1440px;
+  min-width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include r(480){
+    padding: 0;
+  }
+}
+
+
