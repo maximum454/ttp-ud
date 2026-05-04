@@ -1,9 +1,10 @@
+@use "../mixin" as *;
+
 .contact-group{
   display: flex;
   gap: 30px;
   &__item{
     max-width: 280px;
-    padding: 0 20px;
   }
   &__title{
     color: var(--clr-text-label);
@@ -24,6 +25,12 @@
   &__link{
     &:hover{
       color: var(--clr-gold);
+    }
+  }
+  @include r(1200){
+    gap: 20px;
+    &__item{
+      max-width: 280px;
     }
   }
 }

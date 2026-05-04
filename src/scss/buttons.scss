@@ -22,9 +22,9 @@
     pointer-events: none;
   }
   &.btn-primary{
-    color: #fff;
-    background-color: #d26e4b;
-    border-color: #d26e4b;
+    color: var(--clr-white);
+    background-color: var(--clr-blue-medium);
+    border-color: var(--clr-blue-medium);
     &:hover {
       color: #fff;
       background-color: rgba(#d26e4b,.8);
