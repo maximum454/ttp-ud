@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .footer{
   background-color: var(--footer-bg);
   &__inner{
@@ -22,6 +24,7 @@
     flex-shrink: 0;
     transition: opacity .3s ease;
     margin-bottom: 60px;
+    text-align: left;
     &:hover{
       opacity: .65;
       transition: opacity .3s ease;
@@ -79,6 +82,25 @@
       &:hover{
         color: var(--clr-gold);
       }
+    }
+  }
+  @include r(1200){
+    &__inner{
+      justify-content: space-between;
+      gap: 16px 35px;
+      padding: 100px 0;
+      display: grid;
+      grid-template-columns: 254px 1fr 254px;
+    }
+  }
+  @include r(768){
+    text-align: center;
+    &__inner{
+      grid-template-columns: 1fr;
+    }
+    &__item{
+      max-width: 100%;
+      justify-items: center;
     }
   }
 }

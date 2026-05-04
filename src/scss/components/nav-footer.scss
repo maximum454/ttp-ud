@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .nav-footer{
   list-style: none;
   margin: auto;
@@ -31,5 +33,11 @@
       transition: opacity .3s ease;
       color: var(--btn-accent-bg);
     }
+  }
+  @include r(1200){
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  @include r(768){
+    grid-template-columns: 1fr;
   }
 }
