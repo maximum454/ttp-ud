@@ -9,6 +9,10 @@
 @use "scss/text";
 @use "scss/tabs";
 
+@use 'swiper/css';
+@use 'swiper/css/navigation';
+@use 'swiper/css/pagination';
+
 //Шапка
 @use "scss/components/header";
 @use "scss/components/social-links";
@@ -17,6 +21,8 @@
 @use "scss/components/footer";
 @use "scss/components/nav-footer";
 @use "scss/components/created-site";
+@use "scss/components/hero";
+@use "scss/components/slider-news";
 
 
 
@@ -67,7 +73,7 @@ body{
   }
 }
 .wrp{
-
+  overflow: hidden;
 }
 .container{
   max-width: 1440px;
@@ -80,6 +86,43 @@ body{
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.d-none {
+  display: none;
+}
+.d-flex{
+  display: flex;
+}
+
+.d-desktop-none {
+  display: none;
+  @include r(767) {
+    display: block;
+  }
+}
+
+.d-mobile-none {
+  display: block;
+  @include r(767) {
+    display: none !important;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.d-block {
+  display: block;
+}
+
+.text-truncate {
+  display: -webkit-box;           /* Включаем Flex-контейнер старого типа */
+  -webkit-line-clamp: 4;          /* Указываем количество строк */
+  -webkit-box-orient: vertical;   /* Устанавливаем вертикальную ориентацию */
+  overflow: hidden;               /* Прячем все, что не влезло */
+  text-overflow: ellipsis;        /* Добавляем многоточие (работает вместе с line-clamp) */
 }
 
 

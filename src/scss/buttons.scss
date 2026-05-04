@@ -26,18 +26,17 @@
     background-color: var(--clr-blue-medium);
     border-color: var(--clr-blue-medium);
     &:hover {
-      color: #fff;
-      background-color: rgba(#d26e4b,.8);
-      border-color: rgba(#d26e4b,.8);
+      color: var(--clr-blue-dark);
+      background-color: transparent;
+      border-color: rgba(#004f9e,.8);
     }
   }
   &.btn-secondary{
-    color: #666666;
-    background-color: #FFFFFF;
+    color: #1b201f;
+    background: linear-gradient(to bottom, #fdb930, #e89d06);
     border-color: #FFFFFF;
     &:hover {
-      color: #666666;
-      background-color: rgba(#ffffff,.8);
+      background: linear-gradient(to bottom, #e89d06, #fdb930);
       border-color: #FFFFFF;
     }
   }
@@ -82,9 +81,9 @@
     }
   }
   &.btn-light{
-    color: #212529;
-    background-color: #F8F8F8;
-    border-color: #F8F8F8;
+    color: #010101;
+    background-color: #ffffff;
+    border-color: #ffffff;
     &:hover {
       color: #212529;
       background-color: #e2e6ea;

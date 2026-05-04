@@ -16,5 +16,8 @@
     "vite-plugin-handlebars": "^2.0.3",
     "vite-plugin-html-inject": "^1.1.2",
     "vite-plugin-imagemin": "^0.6.1"
+  },
+  "dependencies": {
+    "swiper": "^12.1.4"
   }
 }
