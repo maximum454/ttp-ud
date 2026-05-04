@@ -2,16 +2,16 @@
   list-style: none;
   margin: auto;
   padding: 0;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 18px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
   &__item{
     display: flex;
     flex-direction: column;
     background-color: var(--clr-bg-section);
     padding: 25px 28px;
     border-radius: 5px;
-    max-width: 240px;
   }
   &__label{
     color: var(--clr-text-light);

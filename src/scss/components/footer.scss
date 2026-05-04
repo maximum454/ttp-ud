@@ -1,14 +1,17 @@
 .footer{
   background-color: var(--footer-bg);
   &__inner{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 16px;
+    gap: 16px 35px;
     padding: 100px 0;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
   }
   &__item{
-    max-width: 338px;
+    max-width: 300px;
+    &:nth-child(2){
+      max-width: none;
+    }
   }
   &__logo{
     text-decoration: none;
@@ -49,6 +52,9 @@
     font-weight: 400;
     display: block;
     margin-bottom: 25px;
+    &:hover{
+      color: var(--clr-gold);
+    }
   }
   &__map-site{
     color: var(--clr-text-light);
@@ -56,5 +62,23 @@
     line-height: 1;
     font-weight: 500;
     display: block;
+    text-decoration: none;
+    &:hover{
+      color: var(--clr-gold);
+    }
+  }
+  .contact-group{
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    &__link,
+    &__text{
+      color: var(--clr-white);
+    }
+    &__link{
+      &:hover{
+        color: var(--clr-gold);
+      }
+    }
   }
 }

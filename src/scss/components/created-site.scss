@@ -1,27 +1,20 @@
-.contact-group{
-  display: flex;
-  gap: 30px;
-  &__item{
-    max-width: 280px;
-    padding: 0 20px;
-  }
-  &__title{
+.created-site{
+  margin-top: 30px;
+  &__label{
     color: var(--clr-text-label);
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     display: block;
-  }
-  &__link,
-  &__text{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--clr-text-main);
-    text-decoration: none;
-    font-style: normal;
+    margin-bottom: 12px;
   }
   &__link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--clr-white);
+    text-decoration: none;
+    font-style: normal;
     &:hover{
       color: var(--clr-gold);
     }
