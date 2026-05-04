@@ -34,10 +34,8 @@
   &.btn-secondary{
     color: #1b201f;
     background: linear-gradient(to bottom, #fdb930, #e89d06);
-    border-color: #FFFFFF;
     &:hover {
       background: linear-gradient(to bottom, #e89d06, #fdb930);
-      border-color: #FFFFFF;
     }
   }
   &.btn-success{

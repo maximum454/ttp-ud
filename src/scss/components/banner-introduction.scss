@@ -1,0 +1,73 @@
+@use "../mixin" as *;
+
+.banner-introduction{
+  margin-bottom: 60px;
+  &__inner{
+    display: grid;
+    grid-template-columns: 53.82% 46.18%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 84px;
+  }
+  &__left{
+    background-color: #004f9e;
+    padding: 56px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      background-image: url("/img/simbol-ttp.png");
+      background-size: contain;
+      width: 179px;
+      height: 264px;
+      right: -91px;
+      top: -84px;
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+  &__title{
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 48px;
+    max-width: 700px;
+    margin: 0 0 30px;
+  }
+  &__text{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__right{
+    background-color: #002e6d;
+    padding: 54px 20px;
+    position: relative;
+    z-index: 1;
+    a{
+      text-decoration: none;
+    }
+  }
+  &__form{
+    max-width: 508px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .form-row{
+
+    }
+    .left-column{
+      flex: 1 1 auto;
+    }
+    .right-column {
+      flex: 0 0 200px;
+    }
+    .form-argee{
+      margin-left: 20px;
+    }
+  }
+}

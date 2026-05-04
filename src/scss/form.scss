@@ -19,12 +19,12 @@
 }
 .form-group .form-label {
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 18px;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #333333;
+  font-size: 17px;
+  line-height: 25px;
+  color: #84a9e1;
 }
 .form-group .form-title {
   display: block;
@@ -39,16 +39,12 @@
   display: block;
   width: 100%;
   font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  background-color: transparent;
-  background-clip: padding-box;
+  line-height: 25px;
+  color: #000000;
+  background-color: #FFFFFF;
   border: none;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  padding-bottom: 6px;
-  border-bottom: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #00b39b, #0769ad);
+  border-radius: 3px;
+  padding: 18px 24px;
   &:focus{
     outline: none;
     position: relative;
@@ -67,15 +63,17 @@
     }
   }
   &::placeholder{
-    color: #ffffff;
+    color: #696969;
   }
 
 }
 .form-argee{
-  color: #ffffff;
+  color: #84a9e1;
   font-size: 14px;
+  line-height: 20px;
   a{
     font-size: initial;
+    color: #FFFFFF;
   }
 }
 
