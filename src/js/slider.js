@@ -69,3 +69,20 @@ export const initReviewsSlider = () => {
         }
     });
 };
+
+export const initBannerSlider = () => {
+    const container = document.querySelector('.swiper-slider-banner');
+
+    if (!container) return;
+
+    return new Swiper(container, {
+        modules: [Navigation, Pagination],
+        slidesPerView: 1,
+        spaceBetween: 30,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.slider-banner-next',
+            prevEl: '.slider-banner-prev',
+        },
+    });
+};

@@ -1,0 +1,56 @@
+.slider-banner{
+  &__inner{
+    position: relative;
+  }
+  .swiper-slider-banner{
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+  }
+  .slider-banner-next,
+  .slider-banner-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.09);
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0,-50%);
+    background-color: #FFFFFF;
+    z-index: 10;
+    &:hover{
+      transition: all 0.3s;
+      box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+  .slider-banner-next{
+    right: -20px;
+    left: auto;
+  }
+  .slider-banner-next:after,
+  .slider-banner-prev:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    color: #999;
+    background-image: url("/img/arrow-slider.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+  }
+  .slider-banner-next:after{
+    transform: rotate(180deg);
+  }
+}
