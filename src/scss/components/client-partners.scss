@@ -1,0 +1,33 @@
+.client-partners{
+  margin: 50px 0 100px;
+  &__header{
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__title{
+    color: #000000;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    span{
+      color: #1c4d9b;
+    }
+  }
+  &__subtitle{
+    font-size: 26px;
+    line-height: 32px;
+    color: #4e4e4e;
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 55px 20px;
+    li{
+      text-align: center;
+    }
+  }
+}
