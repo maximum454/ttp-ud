@@ -1,4 +1,5 @@
 import './main.scss'
-import { initNewsSlider } from './js/slider.js';
+import { initNewsSlider, initServicesSlider } from './js/slider.js';
 
 initNewsSlider()
+initServicesSlider()

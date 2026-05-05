@@ -23,3 +23,26 @@ export const initNewsSlider = () => {
         }
     });
 };
+
+export const initServicesSlider = () => {
+    const container = document.querySelector('.swiper-slider-services');
+
+    if (!container) return;
+
+    return new Swiper(container, {
+        modules: [Navigation, Pagination],
+        slidesPerView: 4,
+        spaceBetween: 30,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.slider-services-next',
+            prevEl: '.slider-services-prev',
+        },
+        breakpoints: {
+            320: { slidesPerView: 1 },
+            426: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 }
+        }
+    });
+};
