@@ -3,11 +3,8 @@
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   overflow: hidden;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin: 60px -50vw;
   &__header{
     margin-bottom: 60px;
   }
