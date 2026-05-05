@@ -508,14 +508,35 @@
                 </section>
 
                 <section class="contact-maps">
-                    <div class="slider-banner__inner">
-                        
+                    <div id="yandex-map" class="contact-maps__map"></div>
+                    <div class="contact-maps__inner container">
+                        <div class="contact-maps__contacts">
+                            <h3 class="contact-maps__title">Наши контакты</h3>
+                            <p class="contact-maps__address">г. Ижевск, <br>ул. Промышленная 6, этаж 3</p>
+                            <a class="contact-maps__tel" href="tel:+73412900999">8 (3412) 900-999</a>
+                            <a class="contact-maps__email" href="mailto:udmtpp@udmtpp.ru">udmtpp@udmtpp.ru</a>
+
+                            <div class="contact-maps__work">Режим работы:</div>
+                            <div class="contact-maps__work-row">
+                                <div class="contact-maps__work-item">
+                                    <p>пн-чт  8:00 - 17:30</p>
+                                    <p>пт 8:00 - 16:30</p>
+                                    <p><span>сб, вс - выходной</span></p>
+                                </div>
+                                <div class="contact-maps__work-item">
+                                    <p><span>перерыв<br>
+                                    12:00 - 13:00</span></p>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary">Задать вопрос</button>
+                        </div>
                     </div>
                 </section>
             </div>
         </main>
         <load src="src/includes/footer.html"/>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=74c99c7c-3422-4ad3-88c8-ec87b70bdfb1&lang=ru_RU" type="text/javascript"></script>
     <script type="module" src="/src/main.js"></script>
 </body>
 </html>
