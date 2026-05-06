@@ -4,13 +4,13 @@
   background-color: var(--footer-bg);
   &__inner{
     justify-content: space-between;
-    gap: 16px 35px;
-    padding: 100px 0;
+    gap: 16px 38px;
+    padding: 100px 0 116px;
     display: grid;
     grid-template-columns: 300px 1fr 300px;
   }
   &__item{
-    max-width: 300px;
+    max-width: 295px;
     &:nth-child(2){
       max-width: none;
     }
@@ -23,14 +23,14 @@
     gap: 16px;
     flex-shrink: 0;
     transition: opacity .3s ease;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
     text-align: left;
     &:hover{
       opacity: .65;
       transition: opacity .3s ease;
     }
     &-img{
-
+      flex-shrink: 0;
     }
     &-text{
       color: var(--clr-white);
@@ -46,7 +46,7 @@
     line-height: 24px;
     font-weight: 400;
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
   }
   &__police-link{
     color: var(--clr-text-light);
@@ -54,7 +54,7 @@
     line-height: 24px;
     font-weight: 400;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     &:hover{
       color: var(--clr-gold);
     }
@@ -72,8 +72,8 @@
   }
   .contact-group{
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 16px;
+    margin-bottom: 35px;
     &__link,
     &__text{
       color: var(--clr-white);

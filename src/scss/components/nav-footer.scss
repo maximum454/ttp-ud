@@ -6,13 +6,13 @@
   padding: 0;
   display: grid;
   flex-wrap: wrap;
-  gap: 18px 30px;
+  gap: 20px 30px;
   grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
   &__item{
     display: flex;
     flex-direction: column;
     background-color: var(--clr-bg-section);
-    padding: 25px 28px;
+    padding: 25px 28px 12px;
     border-radius: 5px;
   }
   &__label{
@@ -28,7 +28,7 @@
     text-decoration: none;
     color: var(--clr-text-muted);
     transition: opacity .3s ease;
-    margin-top: 10px;
+    margin-bottom: 6px;
     &:hover{
       transition: opacity .3s ease;
       color: var(--btn-accent-bg);

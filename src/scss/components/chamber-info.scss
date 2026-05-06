@@ -1,9 +1,9 @@
 .chamber-info{
-  margin-bottom: 120px;
+  margin-bottom: 175px;
   &__inner{
     display: grid;
     grid-template-columns: 665px 1fr;
-    gap: 74px;
+    gap: 67px;
   }
   &__img{
     position: relative;
@@ -31,14 +31,14 @@
   }
   &__content{}
   &__header{
-    margin-bottom: 35px;
+    margin-bottom: 26px;
   }
   &__title{
     color: #000000;
     font-size: 50px;
     line-height: 53px;
     font-weight: 700;
-    margin: 0 0 20px;
+    margin: 0 0 16px;
     span{
       color: #1c4d9b;
     }
@@ -51,7 +51,7 @@
   &__list{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 30px;
+    gap: 20px 25px;
     column-gap: 30px;
     padding-left: 18px;
     list-style-type: square;

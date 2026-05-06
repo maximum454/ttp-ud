@@ -14,7 +14,7 @@
 
   }
   &__title{
-    margin:0 0 60px;
+    margin:0 0 50px;
     font-size: 50px;
     font-weight: 700;
     color: #000000;
@@ -27,6 +27,7 @@
     img{
       width: 100%;
       object-fit: cover;
+      display: block;
     }
   }
   &__caption{
@@ -38,7 +39,7 @@
     font-size: 20px;
     line-height: 27px;
     color: #ffffff;
-    padding: 12px 30px 25px;
+    padding: 25px 26px;
     p{
       margin: 0;
     }
@@ -47,8 +48,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 42px;
     padding-bottom: 10px;
+    .btn.btn-secondary{
+      padding: 23px 43px;
+    }
   }
   &__arrows{
     display: flex;

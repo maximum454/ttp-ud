@@ -1,6 +1,7 @@
 @use "../mixin" as *;
 
 .banner-register{
+  margin-bottom: 100px;
   &__inner{
     display: grid;
     grid-template-columns: 64.16% 35.84%;
@@ -41,7 +42,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 56px;
+    padding: 49px 52px;
     position: relative;
     z-index: 1;
   }
@@ -50,7 +51,7 @@
     font-size: 40px;
     line-height: 47px;
     max-width: 500px;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
   }
   &__number{
     color: #000000;
@@ -60,13 +61,14 @@
   &__right{
     background-color: #004f9e;
     border-radius: 3px;
-    padding: 35px 0 35px 100px;
+    padding: 30px 0 35px 92px;
     position: relative;
     z-index: 1;
     .btn-primary{
       background-color: #032e6d;
       margin-bottom: 10px;
       width: 100%;
+      font-size: 24px;
     }
     a{
       color: #ffffff;

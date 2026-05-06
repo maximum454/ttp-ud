@@ -1,10 +1,10 @@
 @use "../mixin" as *;
 
 .banner-introduction{
-  margin-bottom: 60px;
+  margin-bottom: 103px;
   &__inner{
     display: grid;
-    grid-template-columns: 53.82% 46.18%;
+    grid-template-columns: 55% 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,8 +15,9 @@
   }
   &__left{
     background-color: #004f9e;
-    padding: 56px;
+    padding: 63px 63px 47px;
     position: relative;
+    border-radius: 3px 0 0 3px;
     &:after{
       content: '';
       position: absolute;
@@ -24,8 +25,8 @@
       background-size: contain;
       width: 179px;
       height: 264px;
-      right: -91px;
-      top: -84px;
+      right: -93px;
+      top: -76px;
       z-index: 2;
       pointer-events: none;
     }
@@ -35,7 +36,7 @@
     font-size: 38px;
     line-height: 48px;
     max-width: 700px;
-    margin: 0 0 30px;
+    margin: 0 0 25px;
   }
   &__text{
     color: #ffffff;
@@ -44,8 +45,9 @@
   }
   &__right{
     background-color: #002e6d;
-    padding: 54px 20px;
+    padding: 49px 47px;
     position: relative;
+    border-radius: 0 3px 3px 0;
     z-index: 1;
     a{
       text-decoration: none;
@@ -56,7 +58,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     .form-row{
 
     }
@@ -68,6 +70,13 @@
     }
     .form-argee{
       margin-left: 20px;
+      line-height: 18px;
+    }
+    .form-label{
+      margin-bottom: 10px;
+    }
+    .btn.btn-secondary{
+      padding: 20px 45px;
     }
   }
 }
