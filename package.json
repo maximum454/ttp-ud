@@ -18,6 +18,8 @@
     "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
+    "jquery": "^4.0.0",
+    "remodal": "^1.1.1",
     "swiper": "^12.1.4"
   }
 }

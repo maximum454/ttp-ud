@@ -58,6 +58,9 @@
       height: 2px;
     }
   }
+  &__btn{
+    padding: 20px 28px;
+  }
 
   @include r(1024) {
     &__menu-btn{

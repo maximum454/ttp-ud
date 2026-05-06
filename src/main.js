@@ -1,5 +1,10 @@
 import './main.scss'
 import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider } from './js/slider.js';
+import $ from 'jquery';
+import 'remodal';
+
+window.jQuery = $;
+window.$ = $;
 
 initNewsSlider()
 initServicesSlider()

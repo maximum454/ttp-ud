@@ -3,44 +3,37 @@
   text-align: left;
   background-color: transparent;
   padding: 120px 20px 20px;
-  &__title{
-    font-weight: 700;
-    font-size: 24px;
-    color: #ffffff;
-    margin: 0 0 40px;
-  }
   .remodal-close {
-    right: 20px;
-    top: 22px;
+    right: -10px;
+    top: -14px;
     left: auto;
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #004f9e;
     cursor: pointer;
     transition: .3s ease;
+    border-radius: 7px;
     &:before {
       content: '';
-      left: auto;
+      position: absolute;
       right: 0;
       top: 50%;
-      margin-top: -12px;
-      background-image: url("../../public/img/close.svg");
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url("/img/close.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      width: 100%;
-      height: 100%;
+      width: 15px;
+      height: 15px;
     }
     &:hover{
-      transform: rotate(180deg);
       transition: .3s ease;
     }
   }
-  .btn{
-    width: 100%;
-    margin-top: 40px;
-  }
+
   @include rmin(641){
-    max-width: 420px;
+    max-width: 590px;
   }
   @include r(767){
     padding: 20px;
@@ -57,4 +50,55 @@
 }
 .remodal-overlay{
   background-color: #151A20;
+}
+
+
+.modal-question{
+  padding: 55px 80px;
+  background-color: #002e6d;
+  color: #FFFFFF;
+  border-radius: 7px;
+  &__header{
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  &__title{
+    font-size: 38px;
+    line-height: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  &__subtitle{
+    font-size: 19px;
+    line-height: 27px;
+    color: #84a9e1;
+    font-weight: 400;
+  }
+  &__footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 38px;
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      color: #84a9e1;
+      font-weight: 400;
+      margin: 0;
+    }
+    a{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .btn{
+      max-width: 191px;
+    }
+  }
+  .form-group{
+    margin-bottom: 16px;
+  }
+  .form-control{
+    max-height: 194px;
+  }
 }
