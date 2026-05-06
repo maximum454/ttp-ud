@@ -1,12 +1,13 @@
 @use "../mixin" as *;
 
 .nav{
+  background-color: #f0f4f7;
   &__inner{
 
   }
   &__list{
     margin: 0;
-    padding: 15px 20px;
+    padding: 18px 32px;
     border-radius: 5px;
     list-style: none;
     display: flex;

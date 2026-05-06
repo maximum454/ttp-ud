@@ -1,16 +1,67 @@
 .hero {
+  background-color: #f0f4f7;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 54px;
+  margin-bottom: 107px;
+  &__inner{
+    background-image: url("/img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: -77px;
+      left: -22px;
+      background-image: url("/img/contact-maps-decor-1.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      width: 126px;
+      height: 131px;
+    }
+  }
+  &__txt{
+    max-width: 705px;
+    padding: 112px 0 100px;
+  }
+  &__header{
+    margin-bottom: 60px;
+  }
   &__title{
     color: #004f9e;
     font-size: 80px;
+    line-height: 85px;
+    margin: 0;
   }
   &__subtitle{
     color: #010101;
     font-size: 63px;
+    line-height: 72px;
+    margin: 0;
   }
   &__tag {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 13px;
+    gap: 14px 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .btn{
+      padding: 12px 20px;
+    }
+  }
+  &__object{
+    max-width: 613px;
   }
 
   .btn {

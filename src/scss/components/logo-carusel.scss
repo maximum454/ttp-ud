@@ -1,0 +1,67 @@
+.logo-carusel{
+  width: 600px;
+  height: 600px;
+  margin-top: 25px;
+  &__inner{
+    background-image: url("/img/line-figure.png");
+    background-size: 456px 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  &__item{
+    background-image: url("/img/figure.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 148px;
+    height: 161px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    &.item-1{
+      top: 32px;
+      left: 88px;
+    }
+    &.item-2{
+      top: 0;
+    }
+    &.item-3{
+      top: 32px;
+      right: 88px;
+    }
+    &.item-4{
+      top: 140px;
+      right: 4px;
+    }
+    &.item-5{
+      top: 292px;
+      right: 4px;
+    }
+    &.item-6{
+      top: 408px;
+      right: 84px;
+    }
+    &.item-7{
+      bottom: 0;
+    }
+    &.item-8{
+      top: 408px;
+      left: 84px;
+    }
+    &.item-9{
+      top: 292px;
+      left: 0;
+    }
+    &.item-10{
+      top: 140px;
+      left: 4px;
+    }
+  }
+}
