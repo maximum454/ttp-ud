@@ -1,10 +1,11 @@
 import './main.scss'
-import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider } from './js/slider.js';
+import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider } from './js/slider.js';
 
 initNewsSlider()
 initServicesSlider()
 initReviewsSlider()
 initBannerSlider()
+initPrivilegesSlider()
 
 // Функция инициализации
 function initMap() {

@@ -79,6 +79,15 @@
       padding-left: 30px;
       margin-top: 10px;
     }
+    .btn{
+      border-radius: 3px 0 0 3px;
+      border: none;
+      &:hover{
+        color: #004f9e;
+        background-color: #FFFFFF;
+        border: none;
+      }
+    }
   }
   .decor-man{
     position: absolute;

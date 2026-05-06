@@ -17,18 +17,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    &:before{
-      content: '';
-      position: absolute;
-      bottom: -77px;
-      left: -22px;
-      background-image: url("/img/contact-maps-decor-1.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center;
-      width: 126px;
-      height: 131px;
-    }
   }
   &__txt{
     max-width: 705px;
@@ -63,7 +51,27 @@
   &__object{
     max-width: 613px;
   }
-
+  &__decor1{
+    background-image: url("/img/organization-info-decor-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  }
+  &__decor2{
+    position: absolute;
+    bottom: -77px;
+    left: -22px;
+    background-image: url("/img/contact-maps-decor-1.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 126px;
+    height: 131px;
+  }
   .btn {
     font-size: 17px;
     border-radius: 3px;

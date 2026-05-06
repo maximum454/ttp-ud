@@ -86,3 +86,20 @@ export const initBannerSlider = () => {
         },
     });
 };
+
+export const initPrivilegesSlider = () => {
+    const container = document.querySelector('.swiper-slider-privileges');
+
+    if (!container) return;
+
+    return new Swiper(container, {
+        modules: [Navigation, Pagination],
+        slidesPerView: 1,
+        spaceBetween: 30,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.slider-privileges-next',
+            prevEl: '.slider-privileges-prev',
+        },
+    });
+};
