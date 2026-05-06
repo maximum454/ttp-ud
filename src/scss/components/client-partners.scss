@@ -26,8 +26,13 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 55px 20px;
+    transition: all .3s ease;
     li{
       text-align: center;
+      &:hover{
+        opacity: .6;
+        transition: all .3s ease;
+      }
     }
   }
 }
