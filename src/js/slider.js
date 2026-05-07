@@ -16,10 +16,10 @@ export const initNewsSlider = () => {
             prevEl: '.slider-news-prev',
         },
         breakpoints: {
-            320: { slidesPerView: 1 },
+            320: { slidesPerView: 1.1, spaceBetween: 20, },
             426: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 }
+            768: { slidesPerView: 3.1 },
+            1200: { slidesPerView: 4, spaceBetween: 30,}
         }
     });
 };
