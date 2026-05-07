@@ -4,7 +4,7 @@
   margin-bottom: 100px;
   &__inner{
     display: grid;
-    grid-template-columns: 64.16% 35.84%;
+    grid-template-columns: 1fr 510px;
     background-image: url("/img/banner-register-bg.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
       content: '';
       position: absolute;
       right: 0;
+      bottom: 0;
       background-image: url("/img/gerb.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -93,12 +94,55 @@
     position: absolute;
     background-image: url("/img/man.png");
     background-size: cover;
-    background-position: center bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     width: 100%;
     height: 241px;
     pointer-events: none;
     bottom: 0;
     z-index: 2;
+  }
+  @include r(1024) {
+    &__title{
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+  @include r(768) {
+    &__inner{
+      grid-template-columns: 1fr;
+      background-image: none;
+      &:after,
+      &:before{
+        display: none;
+      }
+    }
+    &__left,
+    .decor-man{
+      display: none;
+    }
+
+    &__right{
+      padding: 0 0 30px;
+      text-align: center;
+      .btn-primary{
+        background-color: #032e6d;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 24px;
+      }
+      a{
+        font-size: 18px;
+        padding-left: 0;
+        margin-top: 10px;
+      }
+      .btn{
+        font-size: 19px;
+        border: 1px solid #032e6d;
+        &:hover{
+          border: 1px solid #032e6d;
+        }
+      }
+    }
   }
 }
