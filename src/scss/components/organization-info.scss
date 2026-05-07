@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .organization-info{
   margin-bottom: 120px;
   &__inner{}
@@ -120,6 +122,7 @@
     position: absolute;
     bottom: 60px;
     left: 50vw;
+    pointer-events: none;
   }
   &__decor2{
     background-image: url("/img/organization-info-decor-2.png");
@@ -130,6 +133,82 @@
     position: absolute;
     top: 123px;
     right: -111px;
+    pointer-events: none;
+  }
 
+  @include r(425) {
+    &__header{
+      text-align: center;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__row{
+      display: grid;
+      grid-template-columns:1fr;
+    }
+    &__content {
+      margin: 0 -20px;
+      padding: 0 20px;
+      flex-direction: column;
+    }
+    &__label{
+      padding: 10px 36px 30px;
+      font-size: 31px;
+      line-height: 33px;
+      width: 134px;
+      height: 164px;
+      margin: 0 auto;
+    }
+    &__info{
+      padding-top: 0;
+      padding-bottom: 95px;
+      max-width: 100%;
+    }
+    &__numbers{
+      padding-top: 60px;
+      p{
+        font-size: 19px;
+        line-height: 27px;
+      }
+    }
+    &__count{
+      padding: 0;
+      margin: 0 0 50px;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px 38px;
+      &-item{
+        border-bottom: 5px solid #dce5ec;
+        padding-bottom: 25px;
+      }
+      &-num{
+        font-size: 38px;
+        line-height: 42px;
+      }
+      &-name{
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    &__decor1{
+      bottom: auto;
+      top: 96px;
+      left: auto;
+      right: 90px;
+
+    }
+    &__decor2{
+      background-size: cover;
+      width: 81px;
+      height: 120px;
+      top: auto;
+      bottom: -52px;
+      margin-left: -40px;
+      left: 50%;
+
+    }
   }
 }

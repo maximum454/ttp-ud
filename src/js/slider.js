@@ -39,10 +39,10 @@ export const initServicesSlider = () => {
             prevEl: '.slider-services-prev',
         },
         breakpoints: {
-            320: { slidesPerView: 1 },
+            320: { slidesPerView: 1.1, spaceBetween: 20, },
             426: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 }
+            768: { slidesPerView: 3.1 },
+            1200: { slidesPerView: 4, spaceBetween: 30,}
         }
     });
 };
@@ -62,10 +62,10 @@ export const initReviewsSlider = () => {
             prevEl: '.slider-reviews-prev',
         },
         breakpoints: {
-            320: { slidesPerView: 1 },
+            320: { slidesPerView: 1.1, spaceBetween: 20, },
             426: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 }
+            768: { slidesPerView: 3.1 },
+            1200: { slidesPerView: 4, spaceBetween: 30,}
         }
     });
 };
@@ -101,5 +101,10 @@ export const initPrivilegesSlider = () => {
             nextEl: '.slider-privileges-next',
             prevEl: '.slider-privileges-prev',
         },
+        breakpoints: {
+            320: { slidesPerView: 1.1, spaceBetween: 20, },
+            768: { slidesPerView: 1 },
+            1200: { slidesPerView: 1, spaceBetween: 30,}
+        }
     });
 };

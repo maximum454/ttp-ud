@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .client-partners{
   margin: 50px 0 100px;
   &__header{
@@ -33,6 +35,21 @@
         opacity: .6;
         transition: all .3s ease;
       }
+    }
+  }
+  @include r(425) {
+    margin: 50px 0 60px;
+    &__header{
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 32px;
+    }
+    &__list{
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
     }
   }
 }

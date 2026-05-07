@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .slider-services{
   width: 100vw;
   position: relative;
@@ -113,5 +115,38 @@
   }
   .slider-services-next:after{
     transform: rotate(180deg);
+  }
+  @include r(768) {}
+  @include r(425) {
+    &__header{
+      margin-bottom: 35px;
+    }
+    &__title{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__subtitle{
+      font-size: 23px;
+      line-height: 28px;
+    }
+    &__name{
+      font-size: 19px;
+      line-height: 23px;
+    }
+    &__list{
+      li{
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 15px;
+      }
+    }
+    &__footer{
+    }
+    &__arrows{
+      display: none;
+    }
+    .swiper-slide{
+      padding: 32px;
+    }
   }
 }

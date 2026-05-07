@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .privileges{
   margin-bottom: 105px;
   &__inner{
@@ -212,6 +214,139 @@
       font-weight: 400;
       text-decoration: underline;
       text-underline-offset: 5px;
+    }
+  }
+  @include r(768) {}
+  @include r(425) {
+    margin: 0 -20px;
+    &__inner{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__left{
+      background-color: #004f9e;
+      margin: 0 -20px;
+      padding: 75px 40px 40px;
+      position: relative;
+    }
+    &__right{
+      background-color: #004f9e;
+      margin: 0 -20px;
+      padding: 0 20px 460px;
+      position: relative;
+      overflow: hidden;
+      .slider-privileges{
+        position: relative;
+        width: auto;
+        left: 0;
+        top: 0;
+      }
+    }
+    &__header{
+      margin-bottom: 40px;
+      text-align: center;
+      position: static;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 33px;
+      br{
+        display: none;
+      }
+    }
+    &__subtitle{
+      font-size: 23px;
+      line-height: 26px;
+    }
+    &__line{
+      margin-bottom: 40px;
+      &:after{
+        top: 50%;
+        left: 30%;
+      }
+    }
+    &__list{
+      column-count: 1;
+      li{
+        font-size: 21px;
+      }
+    }
+    &__example{
+      width: 320px;
+      display: flex;
+      gap: 18px;
+      position: absolute;
+      bottom: -400px;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      transition: all .3s ease;
+      z-index: 10;
+      &:hover{
+        .privileges__example-txt{
+          text-decoration: none;
+          transition: all .3s ease;
+        }
+      }
+      &-arrow{
+        width: 45px;
+        height: 45px;
+        border-radius: 3px;
+        &:before{
+          top: 18px;
+          left: 16px;
+          width: 14px;
+          height: 10px;
+        }
+      }
+      &-txt{
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+    &__decor2{
+      display: none;
+    }
+    &__count{
+      width: 240px;
+      height: 240px;
+      border-radius: 0 0 3px 3px;
+      color: #FFFFFF;
+      background-color: #015cb6;
+      position: absolute;
+      left: 50%;
+      margin-left: -120px;
+      top: auto;
+      bottom: -100%;
+      padding:65px 60px 20px;
+      z-index: 10;
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -43px;
+        right: -40px;
+        background-image: url("/img/privileges-decor-1.png");
+        background-size: contain;
+        width: 100px;
+        height: 110px;
+      }
+      &-num{
+        font-size: 75px;
+        margin-left: -170px;
+        margin-bottom: 5px;
+      }
+      &-text{
+        text-align: left;
+        &:before{
+          content: '';
+          position: absolute;
+          left: -87px;
+          top: 12px;
+          width: 57px;
+          height: 1px;
+          background-color: #FFFFFF;
+        }
+      }
     }
   }
 }

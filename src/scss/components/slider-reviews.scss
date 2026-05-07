@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .slider-reviews{
   width: 100vw;
   position: relative;
@@ -112,5 +114,33 @@
   }
   .slider-reviews-next:after{
     transform: rotate(180deg);
+  }
+
+  @include r(425) {
+    &__header{
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__content{
+      font-size: 16px;
+      line-height: 24px;
+      padding: 30px;
+      p{
+        margin: 0 0 4px;
+      }
+      b{
+        font-size: 18px;
+      }
+    }
+    &__arrows{
+      display: none;
+    }
+    &__footer{
+      justify-content: center;
+    }
   }
 }
