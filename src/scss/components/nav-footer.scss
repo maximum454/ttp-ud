@@ -40,4 +40,15 @@
   @include r(768){
     grid-template-columns: 1fr;
   }
+  @include r(425){
+    text-align: left;
+    width: 100%;
+    &__item{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--clr-bg-section);
+      padding: 25px 50px 12px;
+      border-radius: 5px;
+    }
+  }
 }

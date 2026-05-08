@@ -103,4 +103,31 @@
       justify-items: center;
     }
   }
+  @include r(425){
+    &__inner{
+      gap: 42px 38px;
+    }
+    &__logo{
+      margin-bottom: 35px;
+      &:hover{
+        opacity: .65;
+        transition: opacity .3s ease;
+      }
+      &-img{
+        flex-shrink: 0;
+      }
+      &-text{
+        color: var(--clr-white);
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+    .contact-group{
+      &__title{
+        display: none;
+      }
+    }
+  }
 }
