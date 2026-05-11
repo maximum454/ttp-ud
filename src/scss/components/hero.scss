@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .hero {
   background-color: #f0f4f7;
   width: 100vw;
@@ -9,7 +11,7 @@
   padding-bottom: 54px;
   margin-bottom: 107px;
   &__inner{
-    background-image: url("/img/hero-bg.png");
+    background-image: url("/img/hero-bg.webp");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -76,5 +78,47 @@
     font-size: 17px;
     border-radius: 3px;
     box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.05);
+  }
+  @include r(1024) {
+    &__inner{
+      background-image: url("/img/hero-bg-mob.png");
+      background-size: cover;
+      background-position: top center;
+      flex-direction: column;
+    }
+    &__header{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &__title{
+      font-size: 35px;
+      line-height: 40px;
+    }
+    &__subtitle{
+      font-size: 31px;
+      line-height: 37px;
+    }
+    &__tag {
+      justify-content: center;
+
+      .btn{
+        padding: 12px 20px;
+        font-size: 15px;
+      }
+    }
+    &__decor1{
+      display: none;
+    }
+    &__decor2{
+      position: absolute;
+      bottom: 50%;
+      left: -22px;
+      background-size: cover;
+      width: 86px;
+      height: 90px;
+    }
+  }
+  @include r(768) {
+    
   }
 }

@@ -1,0 +1,81 @@
+.bx-pagination {
+  margin: 10px 0;
+  .bx-pagination-container {
+    text-align: center;
+    position: relative;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin: 0 2px 15px 2px;
+        &.bx-active span{
+          background: #0083d1;
+          color: #fff;
+        }
+        &.bx-pag-all,
+        &.bx-pag-prev,
+        &.bx-pag-next{
+          a{
+            &:hover{
+              span{
+                background: #fff;
+                border-color: #DADADA;
+                color: #000;
+              }
+            }
+            span{
+              background: #fff;
+              border: 2px solid #eff0f1;
+              line-height: 28px;
+              padding: 0 18px;
+              color: #444;
+            }
+          }
+          span{
+            color: #aab1b4;
+            background: #fff;
+            border: 2px solid #eff0f1;
+            line-height: 28px;
+            padding: 0 18px;
+          }
+        }
+        span{
+          -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+          -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+          -ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+          -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+          transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+          background: #eff0f1;
+          padding: 0 8px;
+          display: block;
+          height: 32px;
+          min-width: 32px;
+          line-height: 32px;
+          color: #444;
+          font-size: 14px;
+          border-radius: 16px;
+          vertical-align: middle;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          border-radius: 16px;
+          height: 32px;
+          min-width: 32px;
+          line-height: 32px;
+          color: #444;
+          vertical-align: middle;
+          &:hover span{
+            background: #DADADA;
+          }
+        }
+      }
+    }
+  }
+}

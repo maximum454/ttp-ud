@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .logo-carusel{
   width: 600px;
   height: 600px;
@@ -62,6 +64,65 @@
     &.item-10{
       top: 140px;
       left: 4px;
+    }
+  }
+  @include r(768) {
+    width: 300px;
+    height: 300px;
+    &__inner{
+      background-image: url("/img/line-figure-mob.png");
+      background-size: 256px 270px;
+    }
+    &__item{
+      background-size: cover;
+      width: 83px;
+      height: 80px;
+      padding: 20px;
+      &.item-1{
+        top: -17px;
+        left: 108px;
+      }
+      &.item-2{
+        top: 8px;
+        left: 185px;
+      }
+      &.item-3{
+        top: 67px;
+        right: -16px;
+      }
+      &.item-4{
+        top: 153px;
+        right: -14px;
+      }
+      &.item-5{
+        top: 218px;
+        right: 30px;
+      }
+      &.item-6{
+        top: 238px;
+        right: 110px;
+      }
+      &.item-7{
+        top: 218px;
+        left: 30px;
+      }
+      &.item-8{
+        top: 153px;
+        left: -17px;
+      }
+      &.item-9{
+        top: 67px;
+        left: -17px;
+      }
+      &.item-10{
+        top: 8px;
+        left: 30px;
+      }
+    }
+    .btn{
+      max-width: 169px;
+      padding: 11px 20px;
+      font-size: 14px;
     }
   }
 }
