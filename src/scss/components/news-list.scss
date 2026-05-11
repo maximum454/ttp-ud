@@ -1,0 +1,83 @@
+@use "../mixin" as *;
+.news-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  &__item{
+    display: block;
+    flex: 1 1 calc(33.333% - 20px);
+    text-decoration: none;
+    color: #010101;
+    max-width: 298px;
+    &:hover{
+      box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.1);
+      .news-list__name{
+        color: #004f9e;
+      }
+    }
+  }
+  &__card{
+    margin: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+  }
+  &__img{
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__caption{
+    padding: 20px;
+    margin-top: 20px;
+    .btn{
+      padding: 10px 30px;
+      width: 100%;
+    }
+  }
+  &__date{
+    font-size: 16px;
+    line-height: 22px;
+    color: #172234;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -9px;
+      background-image: url("/img/icon-date.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__name{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__anons{
+    font-size: 17px;
+    line-height: 24px;
+    color: #696969;
+    margin-bottom: 20px;
+  }
+  @include r(1200){
+    &__item{
+      flex: 1 1 calc(50% - 20px);
+      max-width: 50%;
+    }
+  }
+  @include r(425){
+    &__item{
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}

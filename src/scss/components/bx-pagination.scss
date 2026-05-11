@@ -1,5 +1,5 @@
 .bx-pagination {
-  margin: 10px 0;
+  margin: 40px 0;
   .bx-pagination-container {
     text-align: center;
     position: relative;
@@ -7,12 +7,14 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      display: inline-block;
+      display: flex;
+      gap: 5px;
+      justify-content: center;
       li {
         display: inline-block;
         margin: 0 2px 15px 2px;
         &.bx-active span{
-          background: #0083d1;
+          background: #004f9e;
           color: #fff;
         }
         &.bx-pag-all,
@@ -21,58 +23,54 @@
           a{
             &:hover{
               span{
-                background: #fff;
-                border-color: #DADADA;
-                color: #000;
+                background: #004f9e;
+                border-color: #004f9e;
+                color: #FFFFFF;
               }
             }
             span{
               background: #fff;
-              border: 2px solid #eff0f1;
+              border: 1px solid #004f9e;
               line-height: 28px;
               padding: 0 18px;
-              color: #444;
+              color: #010101;
             }
           }
           span{
             color: #aab1b4;
             background: #fff;
-            border: 2px solid #eff0f1;
+            border: 1px solid #eff0f1;
             line-height: 28px;
             padding: 0 18px;
           }
         }
         span{
-          -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-          -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-          -ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-          -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
           transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-          background: #eff0f1;
+          background: transparent;
+          border: 1px solid #004f9e;
           padding: 0 8px;
           display: block;
           height: 32px;
           min-width: 32px;
           line-height: 32px;
-          color: #444;
+          color: #010101;
           font-size: 14px;
-          border-radius: 16px;
+          border-radius: 3px;
           vertical-align: middle;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
           box-sizing: border-box;
         }
         a {
           text-decoration: none;
           display: block;
-          border-radius: 16px;
+          border-radius: 3px;
           height: 32px;
           min-width: 32px;
           line-height: 32px;
-          color: #444;
+          color: #FFFFFF;
           vertical-align: middle;
           &:hover span{
-            background: #DADADA;
+            background: #004f9e;
+            color: #FFFFFF;
           }
         }
       }
