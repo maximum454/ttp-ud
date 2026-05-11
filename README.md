@@ -4,5 +4,8 @@
 # Главная страница
 * https://maximum454.github.io/ttp-ud/build/index.html
 
+# Новости
+* https://maximum454.github.io/ttp-ud/build/news.html
+
 # Новости детальная
 * https://maximum454.github.io/ttp-ud/build/new-detail.html
