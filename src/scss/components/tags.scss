@@ -1,0 +1,15 @@
+.tags{
+  margin: 0 0 34px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  .btn.btn-light{
+    background-color: #eef2f6;
+    color: #004f9e;
+    font-size: 16px;
+    padding: 14px;
+    font-weight: 500;
+  }
+}

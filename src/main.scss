@@ -36,6 +36,11 @@
 @use "scss/components/logo-carusel";
 @use "scss/components/slider-privileges";
 @use "scss/components/privileges";
+@use "scss/components/side-menu";
+@use "scss/components/breadcrumbs";
+@use "scss/components/tags";
+@use "scss/components/new-detail";
+
 
 
 
@@ -136,6 +141,49 @@ body{
   -webkit-box-orient: vertical;   /* Устанавливаем вертикальную ориентацию */
   overflow: hidden;               /* Прячем все, что не влезло */
   text-overflow: ellipsis;        /* Добавляем многоточие (работает вместе с line-clamp) */
+}
+
+.main{
+  &-page{
+    margin-bottom: 140px;
+    position: relative;
+    &:before{
+      content: '';
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 60px;
+      background-color: #eef2f6;
+    }
+  }
+  &__title{
+    color: #010101;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0 0 100px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 30px 60px;
+  }
+  &__content{}
+  &__sidebar{}
+  @include r(768){
+    &__inner{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px 60px;
+    }
+  }
+  @include r(425){
+    &__title{
+      color: #010101;
+      font-size: 30px;
+      line-height: 42px;
+      margin: 0 0 100px;
+    }
+  }
 }
 
 

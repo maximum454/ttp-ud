@@ -51,5 +51,19 @@ export const menu = () => {
             });
         }
     });
+
+
+    const navSideMenu = document.querySelectorAll('.js-menu-dropdown')
+
+    navSideMenu.forEach(item => {
+        const subMenu = item.querySelector('ul');
+
+        if (subMenu) {
+            item.addEventListener('click', function(e) {
+                e.preventDefault(); // Запрещаем переход по ссылке
+                this.classList.toggle('is-active');
+            });
+        }
+    });
 };
 

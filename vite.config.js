@@ -21,6 +21,8 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 about: resolve(__dirname, 'about.html'),
+                news: resolve(__dirname, 'news.html'),
+                new_detail: resolve(__dirname, 'new-detail.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

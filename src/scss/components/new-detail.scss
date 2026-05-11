@@ -1,0 +1,62 @@
+.new-detail{
+  margin-bottom: 33px;
+  &__date{
+    font-size: 22px;
+    line-height: 33px;
+    color: #172234;
+    margin-top: -86px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -8px;
+      background-image: url("/img/icon-date.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__figure{
+    margin: 30px 0;
+    img{
+      display: block;
+    }
+  }
+  &__source{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  a{
+    color: #004f9e;
+  }
+  img[align="left"] {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    height: auto;
+  }
+  img[align="right"] {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    height: auto;
+  }
+}
