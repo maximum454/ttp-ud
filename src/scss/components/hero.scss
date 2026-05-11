@@ -83,7 +83,6 @@
     &__inner{
       background-image: url("/img/hero-bg-mob.png");
       background-size: cover;
-      background-position: top center;
       flex-direction: column;
     }
     &__header{
@@ -119,6 +118,12 @@
     }
   }
   @include r(768) {
-    
+    &__txt{
+      padding: 60px 0;
+    }
+    &__decor2{
+      bottom: 40%;
+      left: -22px;
+    }
   }
 }
