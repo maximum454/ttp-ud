@@ -157,20 +157,31 @@ body{
       height: 60px;
       background-color: #eef2f6;
     }
+    .main__inner{
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px 60px;
+    }
+    .main__sidebar{
+      display: block;
+    }
   }
   &__title{
     color: #010101;
     font-size: 50px;
     line-height: 62px;
     margin: 0 0 100px;
+    span{
+      color: #004f9e;
+    }
   }
   &__inner{
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 30px 60px;
+
   }
   &__content{}
-  &__sidebar{}
+  &__sidebar{
+    display: none;
+  }
   @include r(768){
     &__inner{
       display: grid;

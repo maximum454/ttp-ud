@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <load src="src/includes/meta.html" label="Новости" description="ТТП Удмуртия"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="wrp">
+    <load src="src/includes/header.html"/>
+    <load src="src/includes/nav.html"/>
+    <main class="main main-page">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">Новости</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main__header">
+                <h1 class="main__title"><span>Список членов</span> Удмуртской торгово-промышленной
+                    палаты (по состоянию на 27 августа 2025г.) Удмуртии 2025</h1>
+
+                <div class="">
+                    тут слайдер с кнопкой
+                </div>
+            </div>
+            <div class="main__inner">
+                <div class="main__content">
+                    <div class="filter">
+                        <div class="filter__inner">
+                            <div class="filter__title">Фильтр</div>
+                            <form action="" class="filter__form">
+                                <div class="">
+                                    <label for="" >Показывать</label>
+                                    <select name="member_type" class="js-select2">
+                                        <option value="all">Все члены</option>
+                                        <option value="individual">Индивидуальные</option>
+                                        <option value="legal">Юридические лица</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="chamber-list">
+
+                    </div>
+                    <load src="src/includes/bx-pagination.html"/>
+                </div>
+                <aside class="main__sidebar">
+                    <nav class="side-menu">
+                        <div class="side-menu__title">Все услуги ТПП УР</div>
+                        <ul class="side-menu__list">
+                            <li class="active dropdown js-menu-dropdown">
+                                <span>Экспертиза</span>
+                                <ul>
+                                    <li class="active"><a href="">меню 1</a></li>
+                                    <li><a href="">меню 2</a></li>
+                                    <li><a href="">меню 3</a></li>
+                                    <li><a href="">меню 4</a></li>
+                                    <li><a href="">меню 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown js-menu-dropdown">
+                                <span>Сертификация</span>
+                                <ul>
+                                    <li class="active"><a href="">меню 1</a></li>
+                                    <li><a href="">меню 2</a></li>
+                                    <li><a href="">меню 3</a></li>
+                                    <li><a href="">меню 4</a></li>
+                                    <li><a href="">меню 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Оценка</a></li>
+                            <li><a href="#">Подтверждение производства
+                                российской промышленной
+                                продукции</a></li>
+                            <li><a href="#">Перевод документов</a></li>
+                            <li><a href="#">Юридические услуги</a></li>
+                            <li><a href="#">Защита интеллектуальной
+                                собственности</a></li>
+                            <li><a href="#">Заверение документов</a></li>
+                            <li><a href="#">Внешнеэкономическая
+                                деятельность предприятий </a></li>
+                            <li><a href="#">Импортозамещение</a></li>
+                            <li><a href="#">Учебно — консультационный
+                                центр Торгово - промышленной
+                                палаты Удмуртской Республики</a></li>
+
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <section class="banner-subscription">
+                <div class="banner-subscription__inner">
+                    <div class="banner-subscription__left">
+                        <h4 class="banner-subscription__title">Хотите оставаться
+                            в курсе событий?</h4>
+                        <p class="banner-subscription__text">Подпишитесь на рассылку новостей от ТПП!</p>
+                    </div>
+                    <div class="banner-subscription__right">
+                        <form action="" class="banner-subscription__form">
+                            <div class="form-row">
+                                <div class="form-group left-column">
+                                    <label class="form-label" for="exampleInput3">Email</label>
+                                    <input type="email" class="form-control" id="exampleInput3" placeholder="name@mail.ru">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn btn-secondary">Подписаться</button>
+                                <p class="form-argee">Нажимая на кнопку,<br> вы соглашаетесь
+                                    <a href="#">с условиями обработки данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <load src="src/includes/footer.html"/>
+    <load src="src/includes/modals.html"/>
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=74c99c7c-3422-4ad3-88c8-ec87b70bdfb1&lang=ru_RU"
+        type="text/javascript"></script>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

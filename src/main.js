@@ -1,6 +1,8 @@
 import './main.scss'
+import 'select2/dist/css/select2.css';
 import $ from 'jquery';
 import 'remodal';
+import select2 from 'select2';
 import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider } from './js/slider.js';
 import { menu } from './js/menu.js';
 
@@ -80,4 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Запуск при полной загрузке API
     ymaps.ready(initMap);
+
+    $('.js-select2').select2({
+        width: '100%'
+    });
 });

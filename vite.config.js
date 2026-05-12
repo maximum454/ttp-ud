@@ -23,6 +23,8 @@ export default defineConfig({
                 about: resolve(__dirname, 'about.html'),
                 news: resolve(__dirname, 'news.html'),
                 new_detail: resolve(__dirname, 'new-detail.html'),
+                chamber_list: resolve(__dirname, 'chamber-list.html'),
+                chamber_detail: resolve(__dirname, 'chamber-detail.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

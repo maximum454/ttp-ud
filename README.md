@@ -9,3 +9,6 @@
 
 # Новости детальная
 * https://maximum454.github.io/ttp-ud/build/new-detail.html
+
+# Члены палаты
+* https://maximum454.github.io/ttp-ud/build/chamber-list.html
