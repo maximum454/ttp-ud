@@ -39,6 +39,10 @@
     .btn-outline-primary{
       border-color: #FFFFFF;
       color: #FFFFFF;
+      &:hover{
+        background-color: #FFFFFF;
+        color: #004f9e;
+      }
     }
   }
   &__title{
