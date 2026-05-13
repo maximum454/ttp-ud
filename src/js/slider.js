@@ -108,3 +108,25 @@ export const initPrivilegesSlider = () => {
         }
     });
 };
+
+export const initChamberSlider = () => {
+    const container = document.querySelector('.swiper-slider-chamber');
+
+    if (!container) return;
+
+    return new Swiper(container, {
+        modules: [Navigation, Pagination],
+        slidesPerView: 4,
+        spaceBetween: 30,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.slider-chamber-next',
+            prevEl: '.slider-chamber-prev',
+        },
+        breakpoints: {
+            320: { slidesPerView: 1, spaceBetween: 20, },
+            426: { slidesPerView: 2 },
+            1200: { slidesPerView: 4, spaceBetween: 30,}
+        }
+    });
+};

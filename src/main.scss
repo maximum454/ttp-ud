@@ -46,6 +46,7 @@
 @use "scss/components/filter";
 @use "scss/components/chamber-list";
 @use "scss/components/questions-specialist";
+@use "scss/components/slider-chamber";
 
 
 
@@ -175,11 +176,14 @@ body{
       }
     }
   }
+  &__header{
+    margin: 0 0 100px;
+  }
   &__title{
     color: #010101;
     font-size: 50px;
     line-height: 62px;
-    margin: 0 0 100px;
+    margin: 0 0 60px;
     span{
       color: #004f9e;
     }
