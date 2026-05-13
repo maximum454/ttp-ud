@@ -8,6 +8,7 @@
 @use "scss/icon";
 @use "scss/text";
 @use "scss/tabs";
+@use "scss/table";
 
 @use 'swiper/css';
 @use 'swiper/css/navigation';
@@ -42,6 +43,9 @@
 @use "scss/components/new-detail";
 @use "scss/components/news-list";
 @use "scss/components/bx-pagination";
+@use "scss/components/filter";
+@use "scss/components/chamber-list";
+@use "scss/components/questions-specialist";
 
 
 
@@ -159,11 +163,16 @@ body{
     }
     .main__inner{
       display: grid;
-      grid-template-columns: 1fr 340px;
+      grid-template-columns: minmax(0, 1fr) 340px;
       gap: 30px 60px;
     }
     .main__sidebar{
       display: block;
+    }
+    @include r(768){
+      .main__inner{
+        grid-template-columns: minmax(0, 1fr);
+      }
     }
   }
   &__title{
@@ -184,9 +193,7 @@ body{
   }
   @include r(768){
     &__inner{
-      display: grid;
       grid-template-columns: 1fr;
-      gap: 30px 60px;
     }
   }
   @include r(425){

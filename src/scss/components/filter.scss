@@ -1,0 +1,76 @@
+.filter{
+  margin-bottom: 45px;
+  &__inner{
+    background-color: #002e6d;
+    padding: 50px;
+    color: #FFFFFF;
+    border-radius: 5px;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+    margin: 0 0 35px;
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px 11px;
+    align-items: flex-end;
+  }
+  &__group{
+    display: flex;
+    flex-direction: column;
+  }
+  &__label{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+  .btn{
+    margin-left: 5px;
+    padding: 19px;
+  }
+  /* Общий контейнер */
+  .select2-container--default {
+    .select2-selection--single {
+      background-color: #fff;
+      border: 1px solid #d1d5db; // Цвет границы как у твоих инпутов
+      border-radius: 3px;        // Скругление
+      height: 61px;              // Высота
+      display: flex;
+      align-items: center;
+      transition: border-color 0.2s ease;
+
+      &:focus, &:active {
+        outline: none;
+        border-color: #0056b3; // Фирменный синий ТПП
+      }
+
+      /* Стрелочка */
+      .select2-selection__arrow {
+        height: 61px;
+        width: 34px;
+        right: 4px;
+
+        b {
+          border-color: #696969 transparent transparent transparent;
+          border-width: 6px 4px 0 4px; // Чуть увеличим стрелку
+        }
+      }
+    }
+
+    /* Текст внутри */
+    .select2-selection__rendered {
+      color: #1f2937;
+      font-size: 18px;
+      padding-left: 16px;
+      padding-right: 40px;
+    }
+
+    /* Плейсхолдер */
+    .select2-selection__placeholder {
+      color: #696969;
+    }
+  }
+}

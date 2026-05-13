@@ -1,0 +1,101 @@
+@use "../mixin" as *;
+
+.chamber-list {
+
+  .table-container {
+    width: 100%; // Контейнер занимает всю доступную ширину
+    overflow-x: auto; // Включаем горизонтальный скролл, если контент не влез
+    -webkit-overflow-scrolling: touch; // Плавный скролл на iPhone/iPad
+    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #0056b3 #f1f5f9;
+    &::-webkit-scrollbar {
+      height: 6px; // Высота горизонтального скролла (сделай 4px, если хочешь еще изящнее)
+    }
+
+    /* Дорожка, по которой едет ползунок */
+    &::-webkit-scrollbar-track {
+      background: #f1f5f9; // Светло-серый фон
+      border-radius: 10px;
+    }
+
+    /* Сам ползунок (бегунок) */
+    &::-webkit-scrollbar-thumb {
+      background-color: #0056b3; // Твой основной синий цвет
+      border-radius: 10px;
+      border: 1px solid #f1f5f9; // Небольшой отступ, чтобы ползунок казался аккуратнее
+
+      &:hover {
+        background-color: #004494; // Цвет при наведении
+      }
+    }
+  }
+
+  .table {
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    white-space: wrap;
+
+    thead {
+      background-color: #dce0e6;
+    }
+
+    tbody {
+      background-color: #f3f3f3;
+    }
+
+    td {
+      border-radius: 3px;
+
+      &:first-child {
+        background-color: #dce0e6;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+
+      &:hover {
+        color: #e89d06;
+      }
+    }
+
+    .btn-more {
+      display: block;
+      background-color: #dce0e6;
+      width: 36px;
+      height: 36px;
+      margin: auto;
+      background-image: url("/img/arrow-down.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(-90deg);
+      border-radius: 3px;
+
+      &:hover {
+        background-color: #e89d06;
+      }
+    }
+  }
+
+  @include r(768) {
+    .table {
+      font-size: 14px;
+      line-height: 20px;
+      &> :not(caption) > * > * {
+        padding: 12px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

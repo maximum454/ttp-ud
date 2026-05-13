@@ -48,6 +48,7 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     text-decoration: none;
     background-color: var(--clr-blue-medium);
+    z-index: 60;
     &:hover{
       background-color: var(--clr-blue-dark);
     }
@@ -95,7 +96,6 @@
     &__menu-btn{
       display: flex;
       order: 3;
-      z-index: 20;
     }
     .social-links{
       display: none;

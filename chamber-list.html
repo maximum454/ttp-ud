@@ -19,7 +19,7 @@
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__current">Новости</span>
+                        <span class="breadcrumbs__current">Список членов</span>
                     </li>
                 </ul>
             </nav>
@@ -33,25 +33,127 @@
             </div>
             <div class="main__inner">
                 <div class="main__content">
-                    <div class="filter">
+                    <div class="filter d-none">
                         <div class="filter__inner">
                             <div class="filter__title">Фильтр</div>
                             <form action="" class="filter__form">
-                                <div class="">
-                                    <label for="" >Показывать</label>
-                                    <select name="member_type" class="js-select2">
-                                        <option value="all">Все члены</option>
+                                <div class="filter__group">
+                                    <label for="all" class="filter__label" >Показывать</label>
+                                    <select name="all" class="js-select2" data-placeholder="Все">
+                                        <option></option>
                                         <option value="individual">Индивидуальные</option>
                                         <option value="legal">Юридические лица</option>
                                     </select>
+                                </div>
+                                <div class="filter__group">
+                                    <label for="type" class="filter__label" >Тип</label>
+                                    <select name="type" class="js-select2" data-placeholder="Название">
+                                        <option></option>
+                                        <option value="individual">Индивидуальные</option>
+                                        <option value="legal">Юридические лица</option>
+                                    </select>
+                                </div>
+                                <div class="filter__group">
+                                    <label for="industry" class="filter__label" >Отрасль</label>
+                                    <select name="industry" class="js-select2" data-placeholder="Медицина">
+                                        <option></option>
+                                        <option value="individual">Индивидуальные</option>
+                                        <option value="legal">Юридические лица</option>
+                                    </select>
+                                </div>
+                                <div class="filter__group">
+                                    <button class="btn btn-secondary">Показать</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="chamber-list">
-
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Наименование</th>
+                                    <th>E-mail</th>
+                                    <th>Сайт</th>
+                                    <th>Подробнее</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ООО «Торгово-промышленная компания»</td>
+                                    <td>info@tpk-example.ru</td>
+                                    <td><a href="https://tpk-example.ru" target="_blank">tpk-example.ru</a></td>
+                                    <td><a href="#" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>АО «Экспорт-Инвест»</td>
+                                    <td>contact@export.ru</td>
+                                    <td><a href="https://export.ru" target="_blank">export.ru</a></td>
+                                    <td><a href="/members/2/" class="btn-more"></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <load src="src/includes/bx-pagination.html"/>
+
+                    <div class="questions-specialist">
+                        <div class="questions-specialist__inner">
+                            <div class="questions-specialist__left">
+                                <div class="questions-specialist__title">Остались вопросы?</div>
+                                <div class="questions-specialist__subtitle">Задайте их нашему специалисту</div>
+                            </div>
+                            <div class="questions-specialist__right">
+                                <button class="btn btn-secondary">Задать вопрос</button>
+                                <button class="btn btn-outline-primary">Заказать услугу</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <aside class="main__sidebar">
                     <nav class="side-menu">
@@ -97,30 +199,6 @@
                     </nav>
                 </aside>
             </div>
-            <section class="banner-subscription">
-                <div class="banner-subscription__inner">
-                    <div class="banner-subscription__left">
-                        <h4 class="banner-subscription__title">Хотите оставаться
-                            в курсе событий?</h4>
-                        <p class="banner-subscription__text">Подпишитесь на рассылку новостей от ТПП!</p>
-                    </div>
-                    <div class="banner-subscription__right">
-                        <form action="" class="banner-subscription__form">
-                            <div class="form-row">
-                                <div class="form-group left-column">
-                                    <label class="form-label" for="exampleInput3">Email</label>
-                                    <input type="email" class="form-control" id="exampleInput3" placeholder="name@mail.ru">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button class="btn btn-secondary">Подписаться</button>
-                                <p class="form-argee">Нажимая на кнопку,<br> вы соглашаетесь
-                                    <a href="#">с условиями обработки данных</a></p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
         </div>
     </main>
     <load src="src/includes/footer.html"/>
