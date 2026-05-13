@@ -21,5 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     select2();
     initMap()
     //Селекты
-    $('.js-select2').select2();
+    $('.js-select2').select2({
+        width: '100%',
+    });
 });

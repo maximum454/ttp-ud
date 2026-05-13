@@ -46,6 +46,13 @@
     tbody {
       background-color: #f3f3f3;
     }
+    tr{
+      &:hover{
+        td {
+          background-color: #dce0e6;
+        }
+      }
+    }
 
     td {
       border-radius: 3px;

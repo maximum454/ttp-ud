@@ -1,3 +1,4 @@
+@use "../mixin" as *;
 .filter{
   margin-bottom: 45px;
   &__inner{
@@ -71,6 +72,26 @@
     /* Плейсхолдер */
     .select2-selection__placeholder {
       color: #696969;
+    }
+  }
+
+  @include r(1024){
+    &__form{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @include r(768){
+    &__inner{
+      padding: 40px;
+    }
+    &__form{
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .btn{
+      margin-top: 20px;
+      margin-left: 0;
+      padding: 19px;
     }
   }
 }
