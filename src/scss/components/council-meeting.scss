@@ -1,0 +1,119 @@
+@use "../mixin" as *;
+.council-meeting{
+  &__info{
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 340px;
+    color: #FFFFFF;
+  }
+  &__left{
+    background-color: #002e6d;
+    padding: 50px 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+
+  }
+  &__label{
+    font-size: 16px;
+    line-height: 1;
+    background-color: #0d4494;
+    padding: 10px 12px;
+    width: fit-content;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  &__text{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  &__right{
+    background-color: #004f9e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    a{
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #FFFFFF;
+      text-decoration: none;
+      display: block;
+    }
+    .btn{
+      margin-top: 20px;
+    }
+  }
+  &__content{
+    max-width: 840px;
+    color: #696969;
+    p{
+      font-size: 17px;
+      line-height: 27px;
+    }
+    ul{
+      margin: 50px 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: my-counter;
+      max-width: 680px;
+      li{
+        counter-increment: my-counter;
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 28px;
+        display: inline-block;
+        width: 100%;
+        font-size: 17px;
+        line-height: 27px;
+        &::before {
+          content: counter(my-counter);
+          position: absolute;
+          left: -4px;
+          top: 4px;
+
+          /* Фон и форма */
+          background-color: #e6ebf1; /* Цвет фона */
+          color: #004f9e;               /* Цвет текста цифры */
+          width: 31px;               /* Ширина фона */
+          height: 33px;              /* Высота фона */
+          border-radius: 3px;        /* Сделать кругом (убери, если нужен квадрат) */
+
+          /* Центрирование текста внутри фона */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  @include r(1200){
+    &__info{
+      grid-template-columns: minmax(100px, 1fr) 300px;
+    }
+    &__left{
+      padding: 30px;
+      gap: 30px 20px;
+    }
+    &__text{
+      font-size: 18px;
+    }
+  }
+  @include r(1024){
+    &__info{
+      display: block;
+    }
+  }
+  @include r(425){
+    &__left{
+      grid-template-columns: 1fr;
+      gap: 30px;
+
+    }
+  }
+}

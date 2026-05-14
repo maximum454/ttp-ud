@@ -25,6 +25,7 @@ export default defineConfig({
                 new_detail: resolve(__dirname, 'new-detail.html'),
                 chamber_list: resolve(__dirname, 'chamber-list.html'),
                 chamber_detail: resolve(__dirname, 'chamber-detail.html'),
+                cases: resolve(__dirname, 'cases.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

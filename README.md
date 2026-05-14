@@ -12,3 +12,9 @@
 
 # Члены палаты
 * https://maximum454.github.io/ttp-ud/build/chamber-list.html
+
+# Кейсы ТПП
+* https://maximum454.github.io/ttp-ud/build/cases.html
+
+# Заседание Совета ТПП Удмуртии
+* https://maximum454.github.io/ttp-ud/build/council-meeting.html
