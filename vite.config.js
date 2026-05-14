@@ -20,12 +20,14 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                about: resolve(__dirname, 'about.html'),
                 news: resolve(__dirname, 'news.html'),
                 new_detail: resolve(__dirname, 'new-detail.html'),
                 chamber_list: resolve(__dirname, 'chamber-list.html'),
                 chamber_detail: resolve(__dirname, 'chamber-detail.html'),
                 cases: resolve(__dirname, 'cases.html'),
+                council_meeting: resolve(__dirname, 'council-meeting.html'),
+                committees_list: resolve(__dirname, 'committees-list.html'),
+                committees_detail: resolve(__dirname, 'committees-detail.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

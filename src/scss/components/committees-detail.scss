@@ -1,0 +1,118 @@
+@use "../mixin" as *;
+.committees-detail{
+  &__inner{
+
+  }
+  &__card{
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 60px;
+  }
+  &__img{
+    img{
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__info{}
+  &__job{
+    background-color: #eef2f6;
+    border-radius: 3px;
+    padding: 15px 24px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    color: #002e6d;
+    margin-bottom: 49px;
+  }
+  &__link{
+    width: fit-content;
+    display: block;
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+    color: #004f9e;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__name{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+    span{
+      display: block;
+      text-transform: uppercase;
+      color: #004f9e;
+    }
+  }
+  &__contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  &__label{
+    font-size: 17px;
+    line-height: 25px;
+    color: #696969;
+    margin-bottom: 5px;
+  }
+  &__phone{
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
+  &__email{
+    color: #004f9e;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__body{
+    h3{
+      font-size: 43px;
+      line-height: 72px;
+      color: #010101;
+      margin: 54px 0 45px;
+    }
+    p{
+      font-size: 17px;
+      line-height: 27px;
+      color: #696969;
+    }
+  }
+
+  @include r(1200){
+    &__card{
+      grid-template-columns: 360px 1fr;
+    }
+  }
+  @include r(1024){
+    &__card{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @include r(768){
+    &__card{
+      grid-template-columns: 1fr;
+    }
+    &__contact{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 15px 50px;
+      margin-bottom: 30px;
+    }
+  }
+}

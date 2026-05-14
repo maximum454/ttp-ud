@@ -1,14 +1,12 @@
 @use "../mixin" as *;
 .news-list{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px 20px;
   &__item{
     display: block;
-    flex: 1 1 calc(33.333% - 20px);
     text-decoration: none;
     color: #010101;
-    max-width: 298px;
     &:hover{
       box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.1);
       .news-list__name{
@@ -67,17 +65,5 @@
     line-height: 24px;
     color: #696969;
     margin-bottom: 20px;
-  }
-  @include r(1200){
-    &__item{
-      flex: 1 1 calc(50% - 20px);
-      max-width: 50%;
-    }
-  }
-  @include r(425){
-    &__item{
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
   }
 }

@@ -18,3 +18,7 @@
 
 # Заседание Совета ТПП Удмуртии
 * https://maximum454.github.io/ttp-ud/build/council-meeting.html
+
+# Комитеты-ТПП
+* https://maximum454.github.io/ttp-ud/build/committees-list.html
+* https://maximum454.github.io/ttp-ud/build/committees-detail.html
