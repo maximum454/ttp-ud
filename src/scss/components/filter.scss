@@ -15,7 +15,7 @@
   }
   &__form{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px 11px;
     align-items: flex-end;
   }
@@ -27,6 +27,9 @@
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 18px;
+  }
+  .form-control{
+    padding: 18px;
   }
   .btn{
     margin-left: 5px;
@@ -42,10 +45,15 @@
       display: flex;
       align-items: center;
       transition: border-color 0.2s ease;
-
       &:focus, &:active {
         outline: none;
         border-color: #0056b3; // Фирменный синий ТПП
+      }
+      &.select2-selection--clearable{
+        .select2-selection__rendered {
+          padding-left: 0;
+          padding-right: 40px;
+        }
       }
 
       /* Стрелочка */
@@ -59,33 +67,40 @@
           border-width: 6px 4px 0 4px; // Чуть увеличим стрелку
         }
       }
+
+      .select2-selection__clear{
+        padding: 10px;
+        margin: 0;
+        height: 100%;
+        span{
+          line-height: 1;
+        }
+      }
+
+      /* Текст внутри */
+      .select2-selection__rendered {
+        color: #1f2937;
+        font-size: 18px;
+        padding-left: 18px;
+        padding-right: 40px;
+      }
+
+      /* Плейсхолдер */
+      .select2-selection__placeholder {
+        color: #696969;
+      }
     }
 
-    /* Текст внутри */
-    .select2-selection__rendered {
-      color: #1f2937;
-      font-size: 18px;
-      padding-left: 16px;
-      padding-right: 40px;
-    }
 
-    /* Плейсхолдер */
-    .select2-selection__placeholder {
-      color: #696969;
-    }
+
+
   }
 
-  @include r(1024){
-    &__form{
-      grid-template-columns: repeat(2,1fr);
-    }
-  }
   @include r(768){
     &__inner{
       padding: 40px;
     }
     &__form{
-      grid-template-columns: 1fr;
       gap: 30px;
     }
     .btn{

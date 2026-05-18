@@ -15,7 +15,6 @@ export const menu = () => {
         btn.classList.toggle('is-active'); // Если нужно анимировать саму кнопку
         body.classList.toggle('lock');
     });
-
     // 2. Клик вне меню (Закрыть)
     document.addEventListener('click', (e) => {
         const isClickInsideNav = nav.contains(e.target);
@@ -26,7 +25,6 @@ export const menu = () => {
             btn.classList.remove('is-active');
         }
     });
-
     // 3. (Опционально) Закрытие по клавише Esc
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && nav.classList.contains('is-active')) {
@@ -34,10 +32,7 @@ export const menu = () => {
             btn.classList.remove('is-active');
         }
     });
-
-
     const menuItems = document.querySelectorAll('.nav__list > li');
-
     menuItems.forEach(item => {
         const subMenu = item.querySelector('ul');
 
@@ -56,12 +51,13 @@ export const menu = () => {
     const navSideMenu = document.querySelectorAll('.js-menu-dropdown')
 
     navSideMenu.forEach(item => {
-        const subMenu = item.querySelector('ul');
+        const parentLi = item.closest('li');
+        const subMenu = parentLi ? parentLi.querySelector('ul') : null;
 
         if (subMenu) {
             item.addEventListener('click', function(e) {
                 e.preventDefault(); // Запрещаем переход по ссылке
-                this.classList.toggle('is-active');
+                parentLi.classList.toggle('is-active');
             });
         }
     });

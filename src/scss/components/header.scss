@@ -121,4 +121,22 @@
       display: none;
     }
   }
+  @include r(425){
+    &__inner{
+      flex-wrap: wrap;
+      gap: 25px 10px;
+    }
+    &__logo{
+      max-width: 225px;
+      gap: 10px;
+      &-img{
+        flex-shrink: 0;
+        max-width: 40px;
+      }
+      &-text{
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+  }
 }
