@@ -1,0 +1,48 @@
+@use "../mixin" as *;
+
+.contacts-chamber {
+  display: grid;
+  grid-template-columns: 264px 1fr;
+  gap: 24px;
+  &__item{
+    padding: 20px 36px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    &:first-child{
+      background-color: #004f9e;
+      color: #FFFFFF;
+      .contacts-chamber__txt--link{
+        color: #FFFFFF;
+      }
+      .contacts-chamber__label{
+        color: #FFFFFF;
+      }
+    }
+    &:nth-child(2){
+      background-color: #f7f7fa;
+    }
+  }
+  &__label{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #696969;
+  }
+  &__txt{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    &--link{
+      color: #004f9e;
+    }
+  }
+  @include r(768) {
+    grid-template-columns:1fr;
+  }
+}

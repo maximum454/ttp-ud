@@ -130,3 +130,25 @@ export const initChamberSlider = () => {
         }
     });
 };
+
+export const initChamberDetailSlider = () => {
+    const container = document.querySelector('.swiper-slider-chamber-detail');
+
+    if (!container) return;
+
+    return new Swiper(container, {
+        modules: [Navigation, Pagination],
+        slidesPerView: 3,
+        spaceBetween: 30,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.slider-chamber-detail-next',
+            prevEl: '.slider-chamber-detail-prev',
+        },
+        breakpoints: {
+            320: { slidesPerView: 1, spaceBetween: 20, },
+            426: { slidesPerView: 2 },
+            1200: { slidesPerView: 3, spaceBetween: 30,}
+        }
+    });
+};

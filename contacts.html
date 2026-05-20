@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <load src="src/includes/meta.html" label="Контакты" description="ТТП Удмуртия"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="wrp">
+    <load src="src/includes/header.html"/>
+    <load src="src/includes/nav.html"/>
+    <main class="main main-page">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">Контакты</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main__header">
+                <h1 class="main__title">Контакты</h1>
+            </div>
+            <div class="main__inner">
+                <div class="main__content">
+                    <div class="contacts">
+
+                        <h3>Контакты ТПП Удмуртской Республики</h3>
+
+                        <div class="contact-group">
+                            <div class="contact-group__item">
+                                <span class="contact-group__title">Телефон:</span>
+                                <a href="tel:+73412900999" class="contact-group__link">8 (3412) 900-999</a>
+                            </div>
+                            <div class="contact-group__item">
+                                <span class="contact-group__title">email почта:</span>
+                                <a href="mailto:udmtpp@udmtpp.ru" class="contact-group__link">udmtpp@udmtpp.ru</a>
+                            </div>
+                            <div class="contact-group__item">
+                                <div class="contact-group__title">Адрес:</div>
+                                <address class="contact-group__text">г. Ижевск, ул. Промышленная&nbsp;6, этаж&nbsp;3</address>
+                            </div>
+
+                        </div>
+
+                        <h3>Режим работы ТПП УР:</h3>
+
+                        <p><b>Пн-чт:</b> 8.00-17.30</p>
+                        <p><b>Пт:</b> 8.00-16.30</p>
+                        <p><b>Обед:</b> 12.00-13.00</p>
+                        <p><b>Выходной:</b> суббота, воскресенье</p>
+                        <p class="badge bg-primary">Наши эксперты работают круглосуточно (по предварительной записи), оплата в нерабочее время х100%.</p>
+
+
+                        <div id="yandex-map" class="contacts__map"></div>
+                    </div>
+                </div>
+                <aside class="main__sidebar">
+                    <load src="src/includes/sidebar.html"/>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <load src="src/includes/footer.html"/>
+    <load src="src/includes/modals.html"/>
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=74c99c7c-3422-4ad3-88c8-ec87b70bdfb1&lang=ru_RU"
+        type="text/javascript"></script>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

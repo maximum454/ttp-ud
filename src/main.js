@@ -8,7 +8,7 @@ window.$ = $;
 import 'remodal';
 import select2 from 'select2';
 import GLightbox from 'glightbox';
-import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider, initChamberSlider } from './js/slider.js';
+import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider, initChamberSlider, initChamberDetailSlider } from './js/slider.js';
 import { menu } from './js/menu.js';
 import { initMap } from './js/ymaps.js';
 
@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initBannerSlider()
     initPrivilegesSlider()
     initChamberSlider()
+    initChamberDetailSlider()
     select2();
     initMap()
     //Селекты

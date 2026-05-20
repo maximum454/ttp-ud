@@ -12,6 +12,7 @@
 
 # Члены палаты
 * https://maximum454.github.io/ttp-ud/build/chamber-list.html
+* https://maximum454.github.io/ttp-ud/build/chamber-detail.html
 
 # Кейсы ТПП
 * https://maximum454.github.io/ttp-ud/build/cases.html
@@ -22,3 +23,6 @@
 # Комитеты-ТПП
 * https://maximum454.github.io/ttp-ud/build/committees-list.html
 * https://maximum454.github.io/ttp-ud/build/committees-detail.html
+* 
+# Контакты
+* https://maximum454.github.io/ttp-ud/build/contacts.html

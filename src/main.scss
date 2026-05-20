@@ -9,6 +9,7 @@
 @use "scss/text";
 @use "scss/tabs";
 @use "scss/table";
+@use "scss/badge";
 
 @use 'swiper/css';
 @use 'swiper/css/navigation';
@@ -51,6 +52,10 @@
 @use "scss/components/council-meeting";
 @use "scss/components/committees-list";
 @use "scss/components/committees-detail";
+@use "scss/components/contacts";
+@use "scss/components/chamber-card";
+@use "scss/components/chamber-detail";
+@use "scss/components/contacts-chamber";
 
 
 
@@ -205,11 +210,14 @@ body{
     }
   }
   @include r(425){
+    &__header{
+      margin: 0 0 50px;
+    }
     &__title{
       color: #010101;
       font-size: 26px;
       line-height: 36px;
-      margin: 0 0 100px;
+      margin: 0 0 50px;
     }
   }
 }
