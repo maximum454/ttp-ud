@@ -1,0 +1,53 @@
+.custom-accordion {
+  border-radius: 5px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+  // Стили, когда аккордеон ОТКРЫТ (браузер сам добавляет атрибут [open])
+  &[open] {
+    border-color: #0056b3;
+
+    // Поворачиваем стрелочку при открытии
+    .accordion-icon {
+      transform: rotate(225deg);
+    }
+  }
+}
+
+.accordion-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  list-style: none; // Скрывает стандартную стрелку в Firefox/Chrome
+  background-color: #eef2f6;
+  // Скрывает стандартную стрелку в Safari
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #f8fafc;
+  }
+}
+
+// Наша кастомная стрелочка (можно сделать через border)
+.accordion-icon {
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #004f9e;
+  border-right: 2px solid #004f9e;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-bottom: 4px; // Небольшая корректировка по центру
+}
+
+// Контентная часть
+.accordion-content {
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 20px;
+}

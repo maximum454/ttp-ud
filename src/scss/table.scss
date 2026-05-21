@@ -7,7 +7,6 @@
   background-color: transparent;
   caption-side: bottom;
   border-collapse: collapse;
-  white-space: nowrap;
   a {
     font-style: normal;
     font-weight: normal;
@@ -54,4 +53,8 @@ th {
   padding: 24px;
   border-bottom-width: 1px;
   font-weight: normal;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #eef2f6;
 }

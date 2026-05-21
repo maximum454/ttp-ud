@@ -1,0 +1,112 @@
+@use "../mixin" as *;
+.card-contact{
+  &__item{
+    display: grid;
+    grid-template-columns: minmax(100px, 220px) minmax(200px, 1fr);
+    gap: 20px;
+    border-radius: 5px;
+    border: 1px solid #004f9e;
+    padding: 20px;
+    margin-bottom: 30px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &__img{
+    img{
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  &__status{
+    background-color: #eef2f6;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    color: #002e6d;
+    margin-bottom: 20px;
+  }
+  &__name{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    span {
+      display: block;
+      text-transform: uppercase;
+      color: #004f9e;
+    }
+  }
+  &__contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+  }
+  &__label{
+    font-size: 17px;
+    line-height: 25px;
+    color: #696969;
+    margin-bottom: 5px;
+  }
+  &__phone{
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+  }
+  &__email{
+    color: #004f9e;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-self: center;
+    .btn{
+      padding: 21px 25px;
+      width: 100%;
+    }
+  }
+  h4{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  @include r(768) {
+    &__name{
+      font-size: 22px;
+      line-height: 28px;
+    }
+    &__phone{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__email{
+      color: #004f9e;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  @include r(640) {
+    &__item{
+      grid-template-columns: 1fr;
+    }
+  }
+}
