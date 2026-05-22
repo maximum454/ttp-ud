@@ -64,7 +64,11 @@
         li{
           &:hover,
           &.active{
-            background-color: #eef2f6;
+            background-color: #84a9e1;
+            a,span{
+              color: #FFFFFF;
+            }
+
           }
           a, span{
             padding-left: 55px;
