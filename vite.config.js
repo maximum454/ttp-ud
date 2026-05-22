@@ -28,6 +28,13 @@ export default defineConfig({
                 council_meeting: resolve(__dirname, 'council-meeting.html'),
                 committees_list: resolve(__dirname, 'committees-list.html'),
                 committees_detail: resolve(__dirname, 'committees-detail.html'),
+                about: resolve(__dirname, 'about.html'),
+                contacts: resolve(__dirname, 'contacts.html'),
+                sovet_tpp_udmurtii: resolve(__dirname, 'sovet-tpp-udmurtii.html'),
+                plan_meropriyatij_palatyi_25: resolve(__dirname, 'plan-meropriyatij-palatyi-25.html'),
+                mkas_tpp_rf: resolve(__dirname, 'mkas-tpp-rf.html'),
+                services: resolve(__dirname, 'services.html'),
+                services_list: resolve(__dirname, 'services-list.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

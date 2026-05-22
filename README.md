@@ -26,3 +26,13 @@
 * 
 # Контакты
 * https://maximum454.github.io/ttp-ud/build/contacts.html
+
+# О союзе
+* https://maximum454.github.io/ttp-ud/build/about.html
+* https://maximum454.github.io/ttp-ud/build/sovet-tpp-udmurtii.html
+* https://maximum454.github.io/ttp-ud/build/plan-meropriyatij-palatyi-25.html
+* https://maximum454.github.io/ttp-ud/build/mkas-tpp-rf.html
+
+# Услуги
+* https://maximum454.github.io/ttp-ud/build/services.html
+* https://maximum454.github.io/ttp-ud/build/services-list.html
