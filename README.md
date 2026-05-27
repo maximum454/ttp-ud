@@ -36,3 +36,4 @@
 # Услуги
 * https://maximum454.github.io/ttp-ud/build/services.html
 * https://maximum454.github.io/ttp-ud/build/services-list.html
+* https://maximum454.github.io/ttp-ud/build/services-detail.html

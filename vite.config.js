@@ -35,6 +35,7 @@ export default defineConfig({
                 mkas_tpp_rf: resolve(__dirname, 'mkas-tpp-rf.html'),
                 services: resolve(__dirname, 'services.html'),
                 services_list: resolve(__dirname, 'services-list.html'),
+                services_detail: resolve(__dirname, 'services-detail.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,

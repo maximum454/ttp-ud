@@ -62,11 +62,13 @@
         list-style: none;
         display: none;
         li{
+          transition: background-color .3s ease;
           &:hover,
           &.active{
-            background-color: #84a9e1;
+            transition: background-color .3s ease;
+            background-color: #fdb930;
             a,span{
-              color: #FFFFFF;
+              color: #1b201f;
             }
 
           }

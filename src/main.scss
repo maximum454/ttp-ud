@@ -60,6 +60,7 @@
 @use "scss/components/card-contact";
 @use "scss/components/article";
 @use "scss/components/services";
+@use "scss/components/file-list";
 
 
 
@@ -224,6 +225,11 @@ body{
       margin: 0 0 50px;
     }
   }
+}
+
+.section-buttons{
+  margin-top: 20px;
+  justify-content: flex-start;
 }
 
 

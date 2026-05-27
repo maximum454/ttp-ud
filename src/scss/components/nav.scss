@@ -45,7 +45,6 @@
             color: #FFFFFF;
           }
         }
-
       }
     }
 
@@ -98,6 +97,7 @@
         list-style: none;
         z-index: 50;
         background-color: #004f9e;
+        border-radius: 0 0 8px 8px;
         &:before{
           content: '';
           display: block;
@@ -119,9 +119,12 @@
             display: block;
             &:hover,
             &.active{
-              background-color: #FFFFFF;
-              color: #1c4d9b;
+              background-color: #fdb930;
+              color: #1b201f;
               transition: background-color .3s ease;
+            }
+            &:last-of-type{
+              border-radius: 0 0 7px 7px;
             }
           }
         }
