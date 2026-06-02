@@ -1,8 +1,12 @@
-.file-list {
-  list-style: none!important;
-  padding: 0;
-  margin: 1.5rem 0;
-
+.files{
+  &__title{
+    font-size: 1.375rem;
+  }
+  &__list{
+    list-style: none!important;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
   &__item {
     margin-bottom: 0.75rem;
 
@@ -67,13 +71,19 @@
     &[href$=".jpg"]::before,
     &[href$=".jpeg"]::before,
     &[href$=".png"]::before {
-        background-color: #faf5ff;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239333ea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Ccircle cx='8.5' cy='12.5' r='1.5'/%3E%3Cpolyline points='20 20 15 15 8 22'/%3E%3C/svg%3E");
+      background-color: #faf5ff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239333ea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Ccircle cx='8.5' cy='12.5' r='1.5'/%3E%3Cpolyline points='20 20 15 15 8 22'/%3E%3C/svg%3E");
     }
 
     // Дефолтная иконка, если расширение не распознано (например, просто неизвестный файл)
     &::before {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
     }
+  }
+  &__small{
+    display: block;
+    font-size: 0.875em;
+    color: #64748b;
+    margin-bottom: 1.5rem;
   }
 }
