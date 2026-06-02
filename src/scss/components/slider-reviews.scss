@@ -41,6 +41,9 @@
     font-weight: 400;
     color: #696969;
     padding: 38px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     p{
       margin: 0 0 4px;
       &:first-child{
@@ -67,6 +70,9 @@
     display: flex;
     gap: 10px;
   }
+  &__name{
+    margin-top: auto;
+  }
   .swiper-slide{
     background-color: #FFFFFF;
     box-shadow: 0 4px 13px 2px rgba(0, 0, 0, 0.05);
@@ -74,8 +80,10 @@
     opacity: 0.3;
     transition: all 0.3s;
     overflow: hidden;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    height: auto;
     &-visible{
       opacity: 1;
     }

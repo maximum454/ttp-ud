@@ -56,6 +56,7 @@ export const initReviewsSlider = () => {
         modules: [Navigation, Pagination],
         slidesPerView: 4,
         spaceBetween: 30,
+        autoHeight: false,
         watchSlidesProgress: true,
         navigation: {
             nextEl: '.slider-reviews-next',
