@@ -6,11 +6,15 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 import 'remodal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import select2 from 'select2';
 import GLightbox from 'glightbox';
 import { initNewsSlider, initServicesSlider, initReviewsSlider, initBannerSlider, initPrivilegesSlider, initChamberSlider, initChamberDetailSlider } from './js/slider.js';
 import { menu } from './js/menu.js';
 import { initMap } from './js/ymaps.js';
+import { initAosCounters } from './js/count.js';
+import { initMouseParallax } from './js/parallax.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,4 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         autoplayVideos: true
     });
+    setTimeout(() => {
+    AOS.init({
+        easing: 'ease-in-out', // тип сглаживания анимации
+        duration: 800, // Скорость анимации в миллисекундах (0.8 сек)
+        once: true,    // Анимация сработает только один раз (при скролле обратно блок не будет исчезать)
+        offset: 120,   // Элемент начнет анимироваться, не доходя 120px до края экрана
+    });
+    }, 200);
+
+    initAosCounters();
+    initMouseParallax();
 });

@@ -37,3 +37,12 @@
 * https://maximum454.github.io/ttp-ud/build/services.html
 * https://maximum454.github.io/ttp-ud/build/services-list.html
 * https://maximum454.github.io/ttp-ud/build/services-detail.html
+
+
+# Скрипты
+* AOS
+* SWIPER
+* select2
+* GLightbox
+* remodal
+* jQuery
