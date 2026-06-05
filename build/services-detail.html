@@ -93,7 +93,15 @@
                 </div>
             </div>
 
-            <button type="button" class="header__btn btn btn-outline-primary" data-remodal-target="modal-question">Задать вопрос</button>
+            <button type="button" class="header__btn btn btn-outline-primary"
+                    data-remodal-target="modal-question"
+                    data-title="Я поменял заголовок"
+                    data-subtitle="И текст тоже переписал"
+                    data-form-name="question"
+                    data-option="option"
+            >
+                Задать вопрос
+            </button>
 
             <button class="header__menu-btn js-btn-menu">
                 <span></span>
@@ -481,7 +489,7 @@
         </div>
     </div>
 </header>
-    <div class="remodal modal-question" data-remodal-id="modal-question">
+    <div class="remodal modal-question" data-remodal-id="modal-question" data-remodal-options="hashTracking: false">
     <button data-remodal-action="close" class="remodal-close"></button>
     <div class="modal-question__header">
         <div class="modal-question__title">Задать вопрос</div>
@@ -489,6 +497,8 @@
     </div>
     <div class="modal-question__body">
         <form action="" class="modal-question__form">
+            <input type="hidden" name="form-name" value="">
+            <input type="hidden" name="form-option" value="">
             <div class="form-group">
                 <label class="form-label" for="">Имя</label>
                 <input type="text" class="form-control" placeholder="Сергеев Сергей Сергеевич">

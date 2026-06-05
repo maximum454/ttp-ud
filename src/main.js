@@ -60,3 +60,47 @@ document.addEventListener('DOMContentLoaded', () => {
     initAosCounters();
     initMouseParallax();
 });
+
+const handleModalData = (e) => {
+    // Ищем, был ли клик совершен по кнопке с нужным атрибутом
+    const triggerButton = e.target.closest('[data-remodal-target]');
+
+    // Если кликнули не по кнопке модалки — ничего не делаем
+    if (!triggerButton) return;
+
+    // 1. Находим саму модалку по ID, который указан в атрибуте кнопки
+    const modalId = triggerButton.getAttribute('data-remodal-target');
+    const modal = document.querySelector(`[data-remodal-id="${modalId}"]`);
+
+    if (modal) {
+        // 2. Вытаскиваем значения дата-атрибутов из кликнутой кнопки
+        const title = triggerButton.getAttribute('data-title');
+        const subtitle = triggerButton.getAttribute('data-subtitle');
+        const formName = triggerButton.getAttribute('data-form-name');
+        const formOption = triggerButton.getAttribute('data-option');
+
+        // 3. Подставляем данные в элементы модалки, если они есть
+        if (title) {
+            const modalTitle = modal.querySelector('.modal-question__title');
+            if (modalTitle) modalTitle.textContent = title;
+        }
+
+        if (subtitle) {
+            const modalSubtitle = modal.querySelector('.modal-question__subtitle');
+            if (modalSubtitle) modalSubtitle.textContent = subtitle;
+        }
+
+        if (formName) {
+            const hiddenInput = modal.querySelector('input[name="form-name"]');
+            if (hiddenInput) hiddenInput.value = formName;
+        }
+
+        if (formOption) {
+            const hiddenOptionInput = modal.querySelector('input[name="form-option"]');
+            if (hiddenOptionInput) hiddenOptionInput.value = formOption;
+        }
+    }
+};
+
+// Навешиваем функцию на событие клика
+document.addEventListener('click', handleModalData);
