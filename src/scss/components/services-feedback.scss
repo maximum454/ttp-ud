@@ -1,0 +1,45 @@
+@use "../mixin" as *;
+.services-feedback{
+  margin-bottom: 40px;
+  background-color: #eef2f6;
+  padding: 40px 20px;
+  border-radius: 7px;
+  &__inner{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__img{
+    flex: 0 0 200px;
+    text-align: center;
+  }
+  &__content{
+    flex: 1;
+    font-size: 18px;
+    line-height: 24px;
+    color: #555;
+    text-align: left;
+    p{
+      margin-top: 0;
+    }
+  }
+  &__buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  @include r(1024) {
+    &__buttons{
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+  @include r(425) {
+    &__img{
+      flex: 0 0 100%;
+      text-align: center;
+    }
+  }
+}
