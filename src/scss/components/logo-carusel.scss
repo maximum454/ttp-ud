@@ -15,6 +15,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    animation: rotateWheel 40s linear infinite;
   }
   &__item{
     background-image: url("/img/figure.png");
@@ -27,6 +28,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    transform-origin: center center;
+    animation: rotateLogo 40s linear infinite;
     &.item-1{
       top: 32px;
       left: 88px;
@@ -47,24 +50,31 @@
       right: 4px;
     }
     &.item-6{
-      top: 408px;
-      right: 84px;
+      bottom: 32px;
+      right: 88px;
     }
     &.item-7{
       bottom: 0;
     }
     &.item-8{
-      top: 408px;
-      left: 84px;
+      bottom: 32px;
+      left: 88px;
     }
     &.item-9{
       top: 292px;
-      left: 0;
+      left: 4px;
     }
     &.item-10{
       top: 140px;
       left: 4px;
     }
+  }
+  &__btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    animation: rotateButton 40s linear infinite;
   }
   @include r(768) {
     width: 300px;
@@ -125,4 +135,28 @@
       font-size: 14px;
     }
   }
+}
+
+// Вращение колеса (ПО часовой)
+@keyframes rotateWheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Компенсация вращения для логотипов и центральной кнопки (ПРОТИВ часовой)
+@keyframes rotateLogo {
+  from {
+    transform:  rotate(0deg);
+  }
+  to {
+    transform:  rotate(-360deg);
+  }
+}
+@keyframes rotateButton {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
 }
