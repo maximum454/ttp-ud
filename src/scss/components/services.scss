@@ -69,8 +69,23 @@
     line-height: 27px;
     color: #696969;
   }
+  .services-subtitle-section{
+    margin-bottom: 40px;
+    margin-top: 70px;
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  .section-full-description{
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
   @include r(425) {
     &__catalog{
+      margin-bottom: 40px;
       &--inner{
         .services__figure{
           margin-left: -20px;
@@ -100,11 +115,17 @@
         margin-bottom: 15px;
       }
     }
+    .services-subtitle-section{
+      margin-top: 50px;
+      margin-bottom: 30px;
+      span {
+        color: #004f9e;
+      }
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
   }
-  .section-full-description{
-    background: #f8f9fa;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-  }
+
 }

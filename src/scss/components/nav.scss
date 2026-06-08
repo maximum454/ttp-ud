@@ -2,6 +2,8 @@
 
 .nav{
   background-color: #f0f4f7;
+  position: relative;
+  z-index: 100;
   &.is-active{
     display: block;
     position: absolute;
@@ -50,7 +52,7 @@
 
   }
   &__inner{
-
+    padding: 0;
   }
   &__list{
     margin: 0;
@@ -131,7 +133,6 @@
       }
     }
   }
-
   @include r(1260) {
     &__list{
       li{

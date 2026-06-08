@@ -28,7 +28,7 @@
       width: 100%;
       object-fit: cover;
       display: block;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 1.33;
     }
   }
   &__caption{
@@ -89,6 +89,7 @@
     overflow: hidden;
     display: block;
     text-decoration: none;
+    height: auto;
     &-visible{
       opacity: 1;
     }
